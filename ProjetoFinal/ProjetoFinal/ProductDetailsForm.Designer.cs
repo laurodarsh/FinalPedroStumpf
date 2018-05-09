@@ -35,12 +35,12 @@
             this.tbxPrice = new System.Windows.Forms.TextBox();
             this.cmbCategory = new System.Windows.Forms.ComboBox();
             this.cbxActive = new System.Windows.Forms.CheckBox();
-            this.pbxBack = new System.Windows.Forms.PictureBox();
             this.pbxDelete = new System.Windows.Forms.PictureBox();
             this.pbxAdd = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pbxBack)).BeginInit();
+            this.pbxBack = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pbxDelete)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxAdd)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxBack)).BeginInit();
             this.SuspendLayout();
             // 
             // lblName
@@ -102,23 +102,13 @@
             this.cbxActive.Text = "Ativo";
             this.cbxActive.UseVisualStyleBackColor = true;
             // 
-            // pbxBack
-            // 
-            this.pbxBack.BackgroundImage = global::ProjetoFinal.Properties.Resources.Back;
-            this.pbxBack.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pbxBack.Location = new System.Drawing.Point(12, 155);
-            this.pbxBack.Name = "pbxBack";
-            this.pbxBack.Size = new System.Drawing.Size(38, 30);
-            this.pbxBack.TabIndex = 11;
-            this.pbxBack.TabStop = false;
-            // 
             // pbxDelete
             // 
             this.pbxDelete.BackgroundImage = global::ProjetoFinal.Properties.Resources.delete;
             this.pbxDelete.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pbxDelete.Location = new System.Drawing.Point(128, 155);
+            this.pbxDelete.Location = new System.Drawing.Point(161, 160);
             this.pbxDelete.Name = "pbxDelete";
-            this.pbxDelete.Size = new System.Drawing.Size(39, 30);
+            this.pbxDelete.Size = new System.Drawing.Size(22, 20);
             this.pbxDelete.TabIndex = 10;
             this.pbxDelete.TabStop = false;
             // 
@@ -126,11 +116,21 @@
             // 
             this.pbxAdd.BackgroundImage = global::ProjetoFinal.Properties.Resources.Add;
             this.pbxAdd.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pbxAdd.Location = new System.Drawing.Point(173, 155);
+            this.pbxAdd.Location = new System.Drawing.Point(189, 160);
             this.pbxAdd.Name = "pbxAdd";
-            this.pbxAdd.Size = new System.Drawing.Size(38, 30);
+            this.pbxAdd.Size = new System.Drawing.Size(22, 20);
             this.pbxAdd.TabIndex = 9;
             this.pbxAdd.TabStop = false;
+            // 
+            // pbxBack
+            // 
+            this.pbxBack.BackgroundImage = global::ProjetoFinal.Properties.Resources.Back;
+            this.pbxBack.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pbxBack.Location = new System.Drawing.Point(12, 160);
+            this.pbxBack.Name = "pbxBack";
+            this.pbxBack.Size = new System.Drawing.Size(22, 20);
+            this.pbxBack.TabIndex = 12;
+            this.pbxBack.TabStop = false;
             // 
             // ProductDetailsForm
             // 
@@ -149,9 +149,9 @@
             this.Controls.Add(this.lblName);
             this.Name = "ProductDetailsForm";
             this.Text = "ProductDetailsForm";
-            ((System.ComponentModel.ISupportInitialize)(this.pbxBack)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxDelete)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxAdd)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxBack)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
