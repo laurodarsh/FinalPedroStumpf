@@ -30,73 +30,75 @@
         {
             this.lblSearch = new System.Windows.Forms.Label();
             this.tbxSearch = new System.Windows.Forms.TextBox();
-            this.pbxSearch = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.dgvLog = new System.Windows.Forms.DataGridView();
-            ((System.ComponentModel.ISupportInitialize)(this.pbxSearch)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.pbxBack = new System.Windows.Forms.PictureBox();
+            this.pbxSearch = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvLog)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxBack)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxSearch)).BeginInit();
             this.SuspendLayout();
             // 
             // lblSearch
             // 
             this.lblSearch.AutoSize = true;
-            this.lblSearch.Location = new System.Drawing.Point(13, 30);
+            this.lblSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSearch.Location = new System.Drawing.Point(13, 27);
             this.lblSearch.Name = "lblSearch";
-            this.lblSearch.Size = new System.Drawing.Size(59, 13);
+            this.lblSearch.Size = new System.Drawing.Size(68, 15);
             this.lblSearch.TabIndex = 0;
             this.lblSearch.Text = "Pesquisar :";
             // 
             // tbxSearch
             // 
-            this.tbxSearch.Location = new System.Drawing.Point(78, 27);
+            this.tbxSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbxSearch.Location = new System.Drawing.Point(143, 24);
             this.tbxSearch.Name = "tbxSearch";
-            this.tbxSearch.Size = new System.Drawing.Size(150, 20);
+            this.tbxSearch.Size = new System.Drawing.Size(150, 21);
             this.tbxSearch.TabIndex = 1;
-            // 
-            // pbxSearch
-            // 
-            this.pbxSearch.BackgroundImage = global::ProjetoFinal.Properties.Resources.search;
-            this.pbxSearch.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pbxSearch.Location = new System.Drawing.Point(234, 27);
-            this.pbxSearch.Name = "pbxSearch";
-            this.pbxSearch.Size = new System.Drawing.Size(22, 20);
-            this.pbxSearch.TabIndex = 2;
-            this.pbxSearch.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackgroundImage = global::ProjetoFinal.Properties.Resources.Back;
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox1.Location = new System.Drawing.Point(12, 209);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(22, 20);
-            this.pictureBox1.TabIndex = 3;
-            this.pictureBox1.TabStop = false;
             // 
             // dgvLog
             // 
             this.dgvLog.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvLog.Location = new System.Drawing.Point(16, 53);
             this.dgvLog.Name = "dgvLog";
-            this.dgvLog.Size = new System.Drawing.Size(240, 150);
+            this.dgvLog.Size = new System.Drawing.Size(406, 210);
             this.dgvLog.TabIndex = 4;
+            // 
+            // pbxBack
+            // 
+            this.pbxBack.BackgroundImage = global::ProjetoFinal.Properties.Resources.Back;
+            this.pbxBack.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pbxBack.Location = new System.Drawing.Point(12, 269);
+            this.pbxBack.Name = "pbxBack";
+            this.pbxBack.Size = new System.Drawing.Size(35, 30);
+            this.pbxBack.TabIndex = 3;
+            this.pbxBack.TabStop = false;
+            // 
+            // pbxSearch
+            // 
+            this.pbxSearch.BackgroundImage = global::ProjetoFinal.Properties.Resources.search;
+            this.pbxSearch.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pbxSearch.Location = new System.Drawing.Point(374, 17);
+            this.pbxSearch.Name = "pbxSearch";
+            this.pbxSearch.Size = new System.Drawing.Size(35, 30);
+            this.pbxSearch.TabIndex = 2;
+            this.pbxSearch.TabStop = false;
             // 
             // LogForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(268, 237);
+            this.ClientSize = new System.Drawing.Size(434, 311);
             this.Controls.Add(this.dgvLog);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.pbxBack);
             this.Controls.Add(this.pbxSearch);
             this.Controls.Add(this.tbxSearch);
             this.Controls.Add(this.lblSearch);
             this.Name = "LogForm";
-            this.Text = "LogForm";
-            ((System.ComponentModel.ISupportInitialize)(this.pbxSearch)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.Text = "Log";
             ((System.ComponentModel.ISupportInitialize)(this.dgvLog)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxBack)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxSearch)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -107,7 +109,7 @@
         private System.Windows.Forms.Label lblSearch;
         private System.Windows.Forms.TextBox tbxSearch;
         private System.Windows.Forms.PictureBox pbxSearch;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pbxBack;
         private System.Windows.Forms.DataGridView dgvLog;
     }
 }

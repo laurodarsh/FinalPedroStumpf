@@ -39,29 +39,32 @@
             // lblName
             // 
             this.lblName.AutoSize = true;
+            this.lblName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblName.Location = new System.Drawing.Point(29, 23);
             this.lblName.Name = "lblName";
-            this.lblName.Size = new System.Drawing.Size(41, 13);
+            this.lblName.Size = new System.Drawing.Size(47, 15);
             this.lblName.TabIndex = 0;
             this.lblName.Text = "Nome :";
             // 
             // tbxName
             // 
+            this.tbxName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbxName.Location = new System.Drawing.Point(102, 23);
             this.tbxName.Name = "tbxName";
-            this.tbxName.Size = new System.Drawing.Size(100, 20);
+            this.tbxName.Size = new System.Drawing.Size(100, 21);
             this.tbxName.TabIndex = 1;
             // 
             // tbxPassword
             // 
+            this.tbxPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbxPassword.Location = new System.Drawing.Point(102, 70);
             this.tbxPassword.Name = "tbxPassword";
-            this.tbxPassword.Size = new System.Drawing.Size(100, 20);
+            this.tbxPassword.Size = new System.Drawing.Size(100, 21);
             this.tbxPassword.TabIndex = 2;
             // 
             // btnEnter
             // 
-            this.btnEnter.Location = new System.Drawing.Point(13, 138);
+            this.btnEnter.Location = new System.Drawing.Point(32, 138);
             this.btnEnter.Name = "btnEnter";
             this.btnEnter.Size = new System.Drawing.Size(75, 23);
             this.btnEnter.TabIndex = 3;
@@ -70,7 +73,7 @@
             // 
             // btnPasswordForgot
             // 
-            this.btnPasswordForgot.Location = new System.Drawing.Point(139, 137);
+            this.btnPasswordForgot.Location = new System.Drawing.Point(174, 129);
             this.btnPasswordForgot.Name = "btnPasswordForgot";
             this.btnPasswordForgot.Size = new System.Drawing.Size(75, 40);
             this.btnPasswordForgot.TabIndex = 4;
@@ -80,9 +83,10 @@
             // lblPassword
             // 
             this.lblPassword.AutoSize = true;
+            this.lblPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPassword.Location = new System.Drawing.Point(29, 77);
             this.lblPassword.Name = "lblPassword";
-            this.lblPassword.Size = new System.Drawing.Size(44, 13);
+            this.lblPassword.Size = new System.Drawing.Size(49, 15);
             this.lblPassword.TabIndex = 5;
             this.lblPassword.Text = "Senha :";
             // 
@@ -90,7 +94,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(284, 198);
+            this.ClientSize = new System.Drawing.Size(284, 251);
             this.Controls.Add(this.lblPassword);
             this.Controls.Add(this.btnPasswordForgot);
             this.Controls.Add(this.btnEnter);
