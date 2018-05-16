@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Forms\CategoryAllForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\CategoryAllForm.Designer.cs">
+      <DependentUpon>CategoryAllForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\CategoryDetailsForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -81,11 +87,29 @@
     <Compile Include="Forms\LoginForm.Designer.cs">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\ProductAllForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ProductAllForm.Designer.cs">
+      <DependentUpon>ProductAllForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\ProductDetailsForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\ProductDetailsForm.Designer.cs">
       <DependentUpon>ProductDetailsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\UserAllForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\UserAllForm.Designer.cs">
+      <DependentUpon>UserAllForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\UserProfileAllForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\UserProfileAllForm.Designer.cs">
+      <DependentUpon>UserProfileAllForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\UserProfileDetailsForm.cs">
       <SubType>Form</SubType>
@@ -95,12 +119,15 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Forms\UserDetailForm.cs">
+    <Compile Include="Forms\UserDetailsForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\UserDetailForm.Designer.cs">
-      <DependentUpon>UserDetailForm.cs</DependentUpon>
+    <Compile Include="Forms\UserDetailsForm.Designer.cs">
+      <DependentUpon>UserDetailsForm.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Forms\CategoryAllForm.resx">
+      <DependentUpon>CategoryAllForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\CategoryDetailsForm.resx">
       <DependentUpon>CategoryDetailsForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -113,8 +140,17 @@
     <EmbeddedResource Include="Forms\LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ProductAllForm.resx">
+      <DependentUpon>ProductAllForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\ProductDetailsForm.resx">
       <DependentUpon>ProductDetailsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UserAllForm.resx">
+      <DependentUpon>UserAllForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UserProfileAllForm.resx">
+      <DependentUpon>UserProfileAllForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\UserProfileDetailsForm.resx">
       <DependentUpon>UserProfileDetailsForm.cs</DependentUpon>
@@ -129,8 +165,8 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="Forms\UserDetailForm.resx">
-      <DependentUpon>UserDetailForm.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\UserDetailsForm.resx">
+      <DependentUpon>UserDetailsForm.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

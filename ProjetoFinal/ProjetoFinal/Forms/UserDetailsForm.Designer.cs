@@ -40,12 +40,12 @@
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.pbxBack = new System.Windows.Forms.PictureBox();
-            this.pbxDelete = new System.Windows.Forms.PictureBox();
             this.pbxSave = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pbxBack)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbxDelete)).BeginInit();
+            this.pbxDelete = new System.Windows.Forms.PictureBox();
+            this.pbxBack = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pbxSave)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxDelete)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxBack)).BeginInit();
             this.SuspendLayout();
             // 
             // lblName
@@ -159,15 +159,16 @@
             this.comboBox1.Size = new System.Drawing.Size(100, 23);
             this.comboBox1.TabIndex = 11;
             // 
-            // pbxBack
+            // pbxSave
             // 
-            this.pbxBack.BackgroundImage = global::ProjetoFinal.Properties.Resources.Back;
-            this.pbxBack.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pbxBack.Location = new System.Drawing.Point(9, 199);
-            this.pbxBack.Name = "pbxBack";
-            this.pbxBack.Size = new System.Drawing.Size(35, 30);
-            this.pbxBack.TabIndex = 13;
-            this.pbxBack.TabStop = false;
+            this.pbxSave.BackColor = System.Drawing.Color.Transparent;
+            this.pbxSave.BackgroundImage = global::ProjetoFinal.Properties.Resources.Save;
+            this.pbxSave.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pbxSave.Location = new System.Drawing.Point(166, 201);
+            this.pbxSave.Name = "pbxSave";
+            this.pbxSave.Size = new System.Drawing.Size(35, 30);
+            this.pbxSave.TabIndex = 15;
+            this.pbxSave.TabStop = false;
             // 
             // pbxDelete
             // 
@@ -179,16 +180,15 @@
             this.pbxDelete.TabIndex = 14;
             this.pbxDelete.TabStop = false;
             // 
-            // pbxSave
+            // pbxBack
             // 
-            this.pbxSave.BackColor = System.Drawing.Color.Transparent;
-            this.pbxSave.BackgroundImage = global::ProjetoFinal.Properties.Resources.Save;
-            this.pbxSave.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pbxSave.Location = new System.Drawing.Point(166, 201);
-            this.pbxSave.Name = "pbxSave";
-            this.pbxSave.Size = new System.Drawing.Size(35, 30);
-            this.pbxSave.TabIndex = 15;
-            this.pbxSave.TabStop = false;
+            this.pbxBack.BackgroundImage = global::ProjetoFinal.Properties.Resources.Back;
+            this.pbxBack.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pbxBack.Location = new System.Drawing.Point(9, 199);
+            this.pbxBack.Name = "pbxBack";
+            this.pbxBack.Size = new System.Drawing.Size(35, 30);
+            this.pbxBack.TabIndex = 13;
+            this.pbxBack.TabStop = false;
             // 
             // UserDetailForm
             // 
@@ -213,9 +213,9 @@
             this.Controls.Add(this.lblName);
             this.Name = "UserDetailForm";
             this.Text = "Usuario";
-            ((System.ComponentModel.ISupportInitialize)(this.pbxBack)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbxDelete)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxSave)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxDelete)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxBack)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
