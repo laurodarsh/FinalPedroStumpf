@@ -119,6 +119,7 @@
             this.pbxDelete.Size = new System.Drawing.Size(35, 30);
             this.pbxDelete.TabIndex = 10;
             this.pbxDelete.TabStop = false;
+            this.pbxDelete.Click += new System.EventHandler(this.pbxDelete_Click);
             // 
             // pbxAdd
             // 
@@ -130,6 +131,7 @@
             this.pbxAdd.Size = new System.Drawing.Size(35, 30);
             this.pbxAdd.TabIndex = 9;
             this.pbxAdd.TabStop = false;
+            this.pbxAdd.Click += new System.EventHandler(this.pbxAdd_Click);
             // 
             // pbxBack
             // 
@@ -141,6 +143,7 @@
             this.pbxBack.Size = new System.Drawing.Size(35, 30);
             this.pbxBack.TabIndex = 14;
             this.pbxBack.TabStop = false;
+            this.pbxBack.Click += new System.EventHandler(this.pbxBack_Click);
             // 
             // lblActive
             // 

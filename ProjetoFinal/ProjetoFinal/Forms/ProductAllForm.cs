@@ -16,5 +16,31 @@ namespace ProjetoFinal.Forms
         {
             InitializeComponent();
         }
+
+        private void pbxBack_Click(object sender, EventArgs e)
+        {
+            HomeForm homeForm = new HomeForm();
+            homeForm.Show();
+            this.Hide();
+        }
+
+        private void pbxAdd_Click(object sender, EventArgs e)
+        {
+            ProductDetailsForm productdetails = new ProductDetailsForm();
+            productdetails.Show();
+            this.Hide();
+        }
+
+        private void pbxEdit_Click(object sender, EventArgs e)
+        {
+            ProductDetailsForm productdetails = new ProductDetailsForm();
+            productdetails.Show();
+            this.Hide();
+        }
+
+        private void pbxDelete_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -72,6 +72,7 @@
             this.btnEnter.TabIndex = 3;
             this.btnEnter.Text = "Entrar";
             this.btnEnter.UseVisualStyleBackColor = true;
+            this.btnEnter.Click += new System.EventHandler(this.btnEnter_Click);
             // 
             // btnPasswordForgot
             // 
@@ -107,6 +108,7 @@
             this.Controls.Add(this.tbxName);
             this.Controls.Add(this.lblName);
             this.Name = "LoginForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
             this.ResumeLayout(false);
             this.PerformLayout();

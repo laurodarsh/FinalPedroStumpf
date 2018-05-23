@@ -55,6 +55,7 @@
             this.pbxUser.Size = new System.Drawing.Size(130, 80);
             this.pbxUser.TabIndex = 4;
             this.pbxUser.TabStop = false;
+            this.pbxUser.Click += new System.EventHandler(this.pbxUser_Click);
             this.pbxUser.MouseEnter += new System.EventHandler(this.pbxUser_MouseEnter);
             this.pbxUser.MouseLeave += new System.EventHandler(this.pbxUser_MouseLeave);
             // 
@@ -68,6 +69,7 @@
             this.pbxCategory.Size = new System.Drawing.Size(130, 80);
             this.pbxCategory.TabIndex = 3;
             this.pbxCategory.TabStop = false;
+            this.pbxCategory.Click += new System.EventHandler(this.pbxCategory_Click);
             this.pbxCategory.MouseEnter += new System.EventHandler(this.pbxCategory_MouseEnter);
             this.pbxCategory.MouseLeave += new System.EventHandler(this.pbxCategory_MouseLeave);
             // 
@@ -81,6 +83,7 @@
             this.pbxLog.Size = new System.Drawing.Size(130, 80);
             this.pbxLog.TabIndex = 2;
             this.pbxLog.TabStop = false;
+            this.pbxLog.Click += new System.EventHandler(this.pbxLog_Click);
             this.pbxLog.MouseEnter += new System.EventHandler(this.pbxLog_MouseEnter);
             this.pbxLog.MouseLeave += new System.EventHandler(this.pbxLog_MouseLeave);
             // 
@@ -94,6 +97,7 @@
             this.pbxUserProfile.Size = new System.Drawing.Size(130, 80);
             this.pbxUserProfile.TabIndex = 1;
             this.pbxUserProfile.TabStop = false;
+            this.pbxUserProfile.Click += new System.EventHandler(this.pbxUserProfile_Click);
             this.pbxUserProfile.MouseEnter += new System.EventHandler(this.pbxUserProfile_MouseEnter);
             this.pbxUserProfile.MouseLeave += new System.EventHandler(this.pbxUserProfile_MouseLeave);
             // 
@@ -107,6 +111,7 @@
             this.pbxProduct.Size = new System.Drawing.Size(130, 80);
             this.pbxProduct.TabIndex = 0;
             this.pbxProduct.TabStop = false;
+            this.pbxProduct.Click += new System.EventHandler(this.pbxProduct_Click);
             this.pbxProduct.MouseEnter += new System.EventHandler(this.pbxProduct_MouseEnter);
             this.pbxProduct.MouseLeave += new System.EventHandler(this.pbxProduct_MouseLeave);
             // 

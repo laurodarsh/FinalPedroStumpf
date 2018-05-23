@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ProjetoFinal.Forms;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -75,6 +76,41 @@ namespace ProjetoFinal
         {
             pbxLog.BackColor = Color.Transparent;
             lblLog.Visible = false;
+        }
+
+        private void pbxProduct_Click(object sender, EventArgs e)
+        {
+            ProductAllForm productallForm = new ProductAllForm();
+            productallForm.Show();
+            this.Hide();
+        }
+
+        private void pbxCategory_Click(object sender, EventArgs e)
+        {
+            CategoryAllForm categoryallForm = new CategoryAllForm();
+            categoryallForm.Show();
+            this.Hide();
+        }
+
+        private void pbxUser_Click(object sender, EventArgs e)
+        {
+            UserAllForm userallForm = new UserAllForm();
+            userallForm.Show();
+            this.Hide();
+        }
+
+        private void pbxUserProfile_Click(object sender, EventArgs e)
+        {
+            UserProfileAllForm userprofileallForm = new UserProfileAllForm();
+            userprofileallForm.Show();
+            this.Hide();
+        }
+
+        private void pbxLog_Click(object sender, EventArgs e)
+        {
+            LogForm logForm = new LogForm();
+            logForm.Show();
+            this.Hide();
         }
     }
 }
