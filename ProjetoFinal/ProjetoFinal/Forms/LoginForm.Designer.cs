@@ -39,10 +39,10 @@
             // lblName
             // 
             this.lblName.AutoSize = true;
-            this.lblName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblName.Location = new System.Drawing.Point(29, 23);
             this.lblName.Name = "lblName";
-            this.lblName.Size = new System.Drawing.Size(47, 15);
+            this.lblName.Size = new System.Drawing.Size(53, 17);
             this.lblName.TabIndex = 0;
             this.lblName.Text = "Nome :";
             // 
@@ -64,18 +64,22 @@
             // 
             // btnEnter
             // 
-            this.btnEnter.Location = new System.Drawing.Point(32, 138);
+            this.btnEnter.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnEnter.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEnter.Location = new System.Drawing.Point(32, 154);
             this.btnEnter.Name = "btnEnter";
-            this.btnEnter.Size = new System.Drawing.Size(75, 23);
+            this.btnEnter.Size = new System.Drawing.Size(82, 44);
             this.btnEnter.TabIndex = 3;
             this.btnEnter.Text = "Entrar";
             this.btnEnter.UseVisualStyleBackColor = true;
             // 
             // btnPasswordForgot
             // 
-            this.btnPasswordForgot.Location = new System.Drawing.Point(174, 129);
+            this.btnPasswordForgot.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnPasswordForgot.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPasswordForgot.Location = new System.Drawing.Point(165, 154);
             this.btnPasswordForgot.Name = "btnPasswordForgot";
-            this.btnPasswordForgot.Size = new System.Drawing.Size(75, 40);
+            this.btnPasswordForgot.Size = new System.Drawing.Size(82, 44);
             this.btnPasswordForgot.TabIndex = 4;
             this.btnPasswordForgot.Text = "Esqueceu a senha";
             this.btnPasswordForgot.UseVisualStyleBackColor = true;
@@ -83,10 +87,10 @@
             // lblPassword
             // 
             this.lblPassword.AutoSize = true;
-            this.lblPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPassword.Location = new System.Drawing.Point(29, 77);
             this.lblPassword.Name = "lblPassword";
-            this.lblPassword.Size = new System.Drawing.Size(49, 15);
+            this.lblPassword.Size = new System.Drawing.Size(57, 17);
             this.lblPassword.TabIndex = 5;
             this.lblPassword.Text = "Senha :";
             // 
@@ -94,7 +98,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(284, 251);
+            this.BackColor = System.Drawing.Color.LightGray;
+            this.ClientSize = new System.Drawing.Size(284, 261);
             this.Controls.Add(this.lblPassword);
             this.Controls.Add(this.btnPasswordForgot);
             this.Controls.Add(this.btnEnter);
@@ -102,7 +107,7 @@
             this.Controls.Add(this.tbxName);
             this.Controls.Add(this.lblName);
             this.Name = "LoginForm";
-            this.Text = "LoginForm";
+            this.Text = "Login";
             this.ResumeLayout(false);
             this.PerformLayout();
 
