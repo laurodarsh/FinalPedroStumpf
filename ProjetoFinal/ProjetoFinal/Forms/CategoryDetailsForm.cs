@@ -20,11 +20,11 @@ namespace ProjetoFinal
 
         private void pbxBack_MouseEnter(object sender, EventArgs e)
         {
-            pbxBack.BackgroundImage = ProjetoFinal.Properties.Resources.Back;
+            pbxBack.BackgroundImage = ProjetoFinal.Properties.Resources.Back___Copy;
         }
         private void pbxBack_MouseLeave(object sender, EventArgs e)
         {
-            pbxBack.BackgroundImage = ProjetoFinal.Properties.Resources.Back___Copy;
+            pbxBack.BackgroundImage = ProjetoFinal.Properties.Resources.Back;
         }
         private void pbxBack_Click(object sender, EventArgs e)
         {

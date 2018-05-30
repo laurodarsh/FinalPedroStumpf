@@ -158,14 +158,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <EmbeddedResource Include="Forms\UserDetailsForm.resx">
       <DependentUpon>UserDetailsForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -173,6 +168,11 @@
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
@@ -207,18 +207,30 @@
     <Content Include="Icons\User Profile - Copy.png" />
     <Content Include="Icons\User Profile.png" />
     <Content Include="Icons\User.png" />
-    <None Include="Resources\Save - Copy.png" />
-    <None Include="Resources\delete - Copy.png" />
-    <None Include="Resources\Add - Copy.png" />
-    <None Include="Resources\Edit - Copy.png" />
-    <None Include="Resources\search - Copy.png" />
-    <None Include="Resources\Back - Copy.png" />
-    <None Include="Resources\Log - Copy.png" />
-    <None Include="Resources\User - Copy.png" />
+    <None Include="Resources\User.png" />
+    <None Include="Resources\User Profile.png" />
     <None Include="Resources\User Profile - Copy.png" />
-    <None Include="Resources\Category - Copy.png" />
-    <None Include="Resources\Product - Copy.png" />
+    <None Include="Resources\User - Copy.png" />
+    <None Include="Resources\search.png" />
+    <None Include="Resources\search - Copy.png" />
     <None Include="Resources\Save.png" />
+    <None Include="Resources\Save - Copy.png" />
+    <None Include="Resources\Product.png" />
+    <None Include="Resources\Product - Copy.png" />
+    <None Include="Resources\Login.png" />
+    <None Include="Resources\Log.png" />
+    <None Include="Resources\Log - Copy.png" />
+    <None Include="Resources\Edit.png" />
+    <None Include="Resources\Edit - Copy.png" />
+    <None Include="Resources\delete.png" />
+    <None Include="Resources\delete - Copy.png" />
+    <None Include="Resources\Category.png" />
+    <None Include="Resources\Category - Copy.png" />
+    <None Include="Resources\Back.png" />
+    <None Include="Resources\Back - Copy.png" />
+    <None Include="Resources\Add.png" />
+    <None Include="Resources\Add - Copy.png" />
+    <None Include="Resources\User - Copy1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
