@@ -16,5 +16,29 @@ namespace ProjetoFinal
         {
             InitializeComponent();
         }
+
+        private void pbxBack_MouseEnter(object sender, EventArgs e)
+        {
+            pbxBack.BackgroundImage = ProjetoFinal.Properties.Resources.Back;
+        }
+        private void pbxBack_MouseLeave(object sender, EventArgs e)
+        {
+            pbxBack.BackgroundImage = ProjetoFinal.Properties.Resources.Back___Copy;
+        }
+        private void pbxBack_Click(object sender, EventArgs e)
+        {
+            HomeForm homeForm = new HomeForm();
+            homeForm.Show();
+            this.Hide();
+        }
+
+        private void pbxSearch_MouseEnter(object sender, EventArgs e)
+        {
+            pbxSearch.BackgroundImage = ProjetoFinal.Properties.Resources.search___Copy;
+        }
+        private void pbxSearch_MouseLeave(object sender, EventArgs e)
+        {
+            pbxSearch.BackgroundImage = ProjetoFinal.Properties.Resources.search;
+        }
     }
 }

@@ -105,6 +105,7 @@
     <Compile Include="Forms\UserAllForm.Designer.cs">
       <DependentUpon>UserAllForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\UserDetailsForm1.cs" />
     <Compile Include="Forms\UserProfileAllForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -183,18 +184,40 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
+    <Content Include="Icons\Add - Copy.png" />
     <Content Include="Icons\Add.png" />
+    <Content Include="Icons\Back - Copy.png" />
     <Content Include="Icons\Back.png" />
+    <Content Include="Icons\Category - Copy.png" />
     <Content Include="Icons\Category.png" />
+    <Content Include="Icons\delete - Copy.png" />
     <Content Include="Icons\delete.png" />
+    <Content Include="Icons\Edit - Copy.png" />
     <Content Include="Icons\Edit.png" />
+    <Content Include="Icons\Log - Copy.png" />
     <Content Include="Icons\Log.png" />
     <Content Include="Icons\Login.png" />
+    <Content Include="Icons\Product - Copy.png" />
     <Content Include="Icons\Product.png" />
+    <Content Include="Icons\Save - Copy.png" />
     <Content Include="Icons\Save.png" />
+    <Content Include="Icons\search - Copy.png" />
     <Content Include="Icons\search.png" />
+    <Content Include="Icons\User - Copy.png" />
+    <Content Include="Icons\User Profile - Copy.png" />
     <Content Include="Icons\User Profile.png" />
     <Content Include="Icons\User.png" />
+    <None Include="Resources\Save - Copy.png" />
+    <None Include="Resources\delete - Copy.png" />
+    <None Include="Resources\Add - Copy.png" />
+    <None Include="Resources\Edit - Copy.png" />
+    <None Include="Resources\search - Copy.png" />
+    <None Include="Resources\Back - Copy.png" />
+    <None Include="Resources\Log - Copy.png" />
+    <None Include="Resources\User - Copy.png" />
+    <None Include="Resources\User Profile - Copy.png" />
+    <None Include="Resources\Category - Copy.png" />
+    <None Include="Resources\Product - Copy.png" />
     <None Include="Resources\Save.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -17,55 +17,67 @@ namespace ProjetoFinal.Forms
             InitializeComponent();
         }
 
-        private void pbxSearch_MouseEnter(object sender, EventArgs e)
+        private void pbxBack_MouseEnter(object sender, EventArgs e)
         {
-            pbxSearch.BackColor = Color.LightSkyBlue;
+            pbxBack.BackgroundImage = ProjetoFinal.Properties.Resources.Back;
         }
-
-        private void pbxSearch_MouseLeave(object sender, EventArgs e)
+        private void pbxBack_MouseLeave(object sender, EventArgs e)
         {
-            pbxSearch.BackColor = Color.Transparent;
+            pbxBack.BackgroundImage = ProjetoFinal.Properties.Resources.Back___Copy;
         }
-
+        private void pbxBack_Click(object sender, EventArgs e)
+        {
+            HomeForm homeForm = new HomeForm();
+            homeForm.Show();
+            this.Hide();
+        }
+    
         private void pbxAdd_MouseEnter(object sender, EventArgs e)
         {
-            pbxAdd.BackColor = Color.LightSkyBlue;
+            pbxAdd.BackgroundImage = ProjetoFinal.Properties.Resources.Add___Copy;
         }
-
-
+        private void pbxAdd_MouseLeave(object sender, EventArgs e)
+        {
+            pbxAdd.BackgroundImage = ProjetoFinal.Properties.Resources.Add;
+        }
+        private void pbxAdd_Click(object sender, EventArgs e)
+        {
+            CategoryDetailsForm categoryDetailsForm = new CategoryDetailsForm();
+            categoryDetailsForm.Show();
+            this.Hide();
+        }
+        
         private void pbxEdit_MouseEnter(object sender, EventArgs e)
         {
-            pbxEdit.BackColor = Color.LightSkyBlue;
+            pbxEdit.BackgroundImage = ProjetoFinal.Properties.Resources.Edit___Copy;
         }
-
         private void pbxEdit_MouseLeave(object sender, EventArgs e)
         {
-            pbxEdit.BackColor = Color.Transparent;
+            pbxEdit.BackgroundImage = ProjetoFinal.Properties.Resources.Edit;
+        }
+        private void pbxEdit_Click(object sender, EventArgs e)
+        {
+            CategoryDetailsForm categoryDetailsForm = new CategoryDetailsForm();
+            categoryDetailsForm.Show();
+            this.Hide();
+        }
+
+        private void pbxSearch_MouseEnter(object sender, EventArgs e)
+        {
+            pbxSearch.BackgroundImage = ProjetoFinal.Properties.Resources.search___Copy;
+        }
+        private void pbxSearch_MouseLeave(object sender, EventArgs e)
+        {
+            pbxSearch.BackgroundImage = ProjetoFinal.Properties.Resources.search;
         }
 
         private void pbxDelete_MouseEnter(object sender, EventArgs e)
         {
-            pbxDelete.BackColor = Color.DarkRed;
+            pbxDelete.BackgroundImage = ProjetoFinal.Properties.Resources.delete___Copy;
         }
-
         private void pbxDelete_MouseLeave(object sender, EventArgs e)
         {
-            pbxDelete.BackColor = Color.Transparent;
-        }
-
-        private void pbxBack_MouseEnter(object sender, EventArgs e)
-        {
-            pbxBack.BackColor = Color.DarkRed;
-        }
-
-        private void pbxBack_MouseLeave(object sender, EventArgs e)
-        {
-            pbxBack.BackColor = Color.Transparent;
-        }
-
-        private void pbxAdd_MouseLeave(object sender, EventArgs e)
-        {
-            pbxAdd.BackColor = Color.Transparent;
+            pbxDelete.BackgroundImage = ProjetoFinal.Properties.Resources.delete;
         }
     }
 }

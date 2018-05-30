@@ -20,78 +20,31 @@ namespace ProjetoFinal
 
         private void pbxProduct_MouseEnter(object sender, EventArgs e)
         {
-            pbxProduct.BackColor = Color.GreenYellow;
+            pbxProduct.BackgroundImage = ProjetoFinal.Properties.Resources.Product___Copy;
             lblProduct.Visible = true;
         }
-
         private void pbxProduct_MouseLeave(object sender, EventArgs e)
         {
-            pbxProduct.BackColor = Color.Transparent;
+            pbxProduct.BackgroundImage = ProjetoFinal.Properties.Resources.Product;
             lblProduct.Visible = false;
         }
-
-        private void pbxCategory_MouseEnter(object sender, EventArgs e)
-        {
-            pbxCategory.BackColor = Color.GreenYellow;
-            lblCategory.Visible = true;
-        }
-
-        private void pbxCategory_MouseLeave(object sender, EventArgs e)
-        {
-            pbxCategory.BackColor = Color.Transparent;
-            lblCategory.Visible = false;
-        }
-
-        private void pbxUser_MouseEnter(object sender, EventArgs e)
-        {
-            pbxUser.BackColor = Color.GreenYellow;
-            lblUser.Visible = true;
-        }
-
-        private void pbxUser_MouseLeave(object sender, EventArgs e)
-        {
-            pbxUser.BackColor = Color.Transparent;
-            lblUser.Visible = false;
-        }
-
-        private void pbxUserProfile_MouseEnter(object sender, EventArgs e)
-        {
-            pbxUserProfile.BackColor = Color.GreenYellow;
-            lblUserProfile.Visible = true;
-        }
-
-        private void pbxUserProfile_MouseLeave(object sender, EventArgs e)
-        {
-            pbxUserProfile.BackColor = Color.Transparent;
-            lblUserProfile.Visible = false;
-        }
-
-        private void pbxLog_MouseEnter(object sender, EventArgs e)
-        {
-            pbxLog.BackColor = Color.GreenYellow;
-            lblLog.Visible = true;
-        }
-
-        private void pbxLog_MouseLeave(object sender, EventArgs e)
-        {
-            pbxLog.BackColor = Color.Transparent;
-            lblLog.Visible = false;
-        }
-
         private void pbxProduct_Click(object sender, EventArgs e)
         {
             ProductAllForm productallForm = new ProductAllForm();
             productallForm.Show();
             this.Hide();
         }
-
-        private void pbxCategory_Click(object sender, EventArgs e)
+ 
+        private void pbxUser_MouseEnter(object sender, EventArgs e)
         {
-            CategoryAllForm categoryallForm = new CategoryAllForm();
-            categoryallForm.Show();
-            this.Hide();
+            pbxUser.BackgroundImage = ProjetoFinal.Properties.Resources.User_Profile___Copy;
+            lblUser.Visible = true;
         }
-
+        private void pbxUser_MouseLeave(object sender, EventArgs e)
+        {
+            pbxUser.BackgroundImage = ProjetoFinal.Properties.Resources.User_Profile;
+            lblUser.Visible = false;
+        }
         private void pbxUser_Click(object sender, EventArgs e)
         {
             UserAllForm userallForm = new UserAllForm();
@@ -99,6 +52,16 @@ namespace ProjetoFinal
             this.Hide();
         }
 
+        private void pbxUserProfile_MouseEnter(object sender, EventArgs e)
+        {
+            pbxUserProfile.BackgroundImage = ProjetoFinal.Properties.Resources.User___Copy;
+            lblUserProfile.Visible = true;
+        }
+        private void pbxUserProfile_MouseLeave(object sender, EventArgs e)
+        {
+            pbxUserProfile.BackgroundImage = ProjetoFinal.Properties.Resources.User;
+            lblUserProfile.Visible = false;
+        }
         private void pbxUserProfile_Click(object sender, EventArgs e)
         {
             UserProfileAllForm userprofileallForm = new UserProfileAllForm();
@@ -106,6 +69,33 @@ namespace ProjetoFinal
             this.Hide();
         }
 
+        private void pbxCategory_MouseEnter(object sender, EventArgs e)
+        {
+            pbxCategory.BackgroundImage = ProjetoFinal.Properties.Resources.Category___Copy;
+            lblCategory.Visible = true;
+        }
+        private void pbxCategory_MouseLeave(object sender, EventArgs e)
+        {
+            pbxCategory.BackgroundImage = ProjetoFinal.Properties.Resources.Category;
+            lblCategory.Visible = false;
+        }
+        private void pbxCategory_Click(object sender, EventArgs e)
+        {
+            CategoryAllForm categoryallForm = new CategoryAllForm();
+            categoryallForm.Show();
+            this.Hide();
+        }
+
+        private void pbxLog_MouseEnter(object sender, EventArgs e)
+        {
+            pbxLog.BackgroundImage = ProjetoFinal.Properties.Resources.Log___Copy;
+            lblLog.Visible = true;
+        }
+        private void pbxLog_MouseLeave(object sender, EventArgs e)
+        {
+            pbxLog.BackgroundImage = ProjetoFinal.Properties.Resources.Log;
+            lblLog.Visible = false;
+        }
         private void pbxLog_Click(object sender, EventArgs e)
         {
             LogForm logForm = new LogForm();
