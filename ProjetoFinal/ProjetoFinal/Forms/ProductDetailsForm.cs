@@ -13,6 +13,7 @@ namespace ProjetoFinal
 {
     public partial class ProductDetailsForm : Form
     {
+
         public ProductDetailsForm()
         {
             InitializeComponent();
