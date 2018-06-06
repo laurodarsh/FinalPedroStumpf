@@ -10,8 +10,9 @@
 
 namespace ProjetoFinal.Properties {
     using System;
-    
-    
+    using System.Drawing;
+
+
     /// <summary>
     ///   A strongly-typed resource class, for looking up localized strings, etc.
     /// </summary>
@@ -75,7 +76,7 @@ namespace ProjetoFinal.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap Add___Copy {
             get {
-                object obj = ResourceManager.GetObject("Add - Copy", resourceCulture);
+                object obj = ResourceManager.GetObject("Add___Copy", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -95,7 +96,7 @@ namespace ProjetoFinal.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap Back___Copy {
             get {
-                object obj = ResourceManager.GetObject("Back - Copy", resourceCulture);
+                object obj = ResourceManager.GetObject("Back___Copy", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -115,7 +116,7 @@ namespace ProjetoFinal.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap Category___Copy {
             get {
-                object obj = ResourceManager.GetObject("Category - Copy", resourceCulture);
+                object obj = ResourceManager.GetObject("Category___Copy", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -135,7 +136,7 @@ namespace ProjetoFinal.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap delete___Copy {
             get {
-                object obj = ResourceManager.GetObject("delete - Copy", resourceCulture);
+                object obj = ResourceManager.GetObject("delete___Copy", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -155,7 +156,7 @@ namespace ProjetoFinal.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap Edit___Copy {
             get {
-                object obj = ResourceManager.GetObject("Edit - Copy", resourceCulture);
+                object obj = ResourceManager.GetObject("Edit___Copy", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -175,7 +176,7 @@ namespace ProjetoFinal.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap Log___Copy {
             get {
-                object obj = ResourceManager.GetObject("Log - Copy", resourceCulture);
+                object obj = ResourceManager.GetObject("Log___Copy", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -205,7 +206,7 @@ namespace ProjetoFinal.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap Product___Copy {
             get {
-                object obj = ResourceManager.GetObject("Product - Copy", resourceCulture);
+                object obj = ResourceManager.GetObject("Product___Copy", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -225,7 +226,7 @@ namespace ProjetoFinal.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap Save___Copy {
             get {
-                object obj = ResourceManager.GetObject("Save - Copy", resourceCulture);
+                object obj = ResourceManager.GetObject("Save___Copy", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -245,7 +246,7 @@ namespace ProjetoFinal.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap search___Copy {
             get {
-                object obj = ResourceManager.GetObject("search - Copy", resourceCulture);
+                object obj = ResourceManager.GetObject("search___Copy", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -265,7 +266,7 @@ namespace ProjetoFinal.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap User___Copy {
             get {
-                object obj = ResourceManager.GetObject("User - Copy", resourceCulture);
+                object obj = ResourceManager.GetObject("User___Copy", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -295,9 +296,11 @@ namespace ProjetoFinal.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap User_Profile___Copy {
             get {
-                object obj = ResourceManager.GetObject("User Profile - Copy", resourceCulture);
+                object obj = ResourceManager.GetObject("User_Profile___Copy", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+
+        public static Image BackCopy { get; internal set; }
     }
 }

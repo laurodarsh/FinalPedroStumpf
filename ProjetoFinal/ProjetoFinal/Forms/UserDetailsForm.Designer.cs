@@ -188,7 +188,7 @@
             // 
             // pbxBack
             // 
-            this.pbxBack.BackgroundImage = global::ProjetoFinal.Properties.Resources.Back___Copy;
+            this.pbxBack.BackgroundImage = global::ProjetoFinal.Properties.Resources.Back;
             this.pbxBack.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pbxBack.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pbxBack.Location = new System.Drawing.Point(12, 219);

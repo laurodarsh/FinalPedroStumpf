@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HomeForm));
             this.lblProduct = new System.Windows.Forms.Label();
             this.lblCategory = new System.Windows.Forms.Label();
             this.lblUser = new System.Windows.Forms.Label();
@@ -102,7 +103,7 @@
             // 
             // pbxLog
             // 
-            this.pbxLog.BackgroundImage = global::ProjetoFinal.Properties.Resources.Log;
+            this.pbxLog.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pbxLog.BackgroundImage")));
             this.pbxLog.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pbxLog.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pbxLog.Location = new System.Drawing.Point(146, 272);
@@ -116,7 +117,7 @@
             // 
             // pbxCategory
             // 
-            this.pbxCategory.BackgroundImage = global::ProjetoFinal.Properties.Resources.Category;
+            this.pbxCategory.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pbxCategory.BackgroundImage")));
             this.pbxCategory.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pbxCategory.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pbxCategory.Location = new System.Drawing.Point(256, 23);
@@ -130,7 +131,7 @@
             // 
             // pbxUserProfile
             // 
-            this.pbxUserProfile.BackgroundImage = global::ProjetoFinal.Properties.Resources.User;
+            this.pbxUserProfile.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pbxUserProfile.BackgroundImage")));
             this.pbxUserProfile.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pbxUserProfile.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pbxUserProfile.Location = new System.Drawing.Point(256, 148);
@@ -144,7 +145,7 @@
             // 
             // pbxUser
             // 
-            this.pbxUser.BackgroundImage = global::ProjetoFinal.Properties.Resources.User_Profile;
+            this.pbxUser.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pbxUser.BackgroundImage")));
             this.pbxUser.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pbxUser.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pbxUser.Location = new System.Drawing.Point(35, 148);
@@ -158,7 +159,7 @@
             // 
             // pbxProduct
             // 
-            this.pbxProduct.BackgroundImage = global::ProjetoFinal.Properties.Resources.Product;
+            this.pbxProduct.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pbxProduct.BackgroundImage")));
             this.pbxProduct.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pbxProduct.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pbxProduct.Location = new System.Drawing.Point(35, 23);
