@@ -103,6 +103,7 @@
             this.pbxSave.Size = new System.Drawing.Size(35, 30);
             this.pbxSave.TabIndex = 5;
             this.pbxSave.TabStop = false;
+            this.pbxSave.Click += new System.EventHandler(this.pbxSave_Click);
             this.pbxSave.MouseEnter += new System.EventHandler(this.pbxSave_MouseEnter);
             this.pbxSave.MouseLeave += new System.EventHandler(this.pbxSave_MouseLeave);
             // 

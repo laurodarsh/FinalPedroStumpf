@@ -19,6 +19,34 @@ namespace ProjetoFinal
             InitializeComponent();
         }
 
+        string name = "" ;
+        float price = 0 ;
+        string category = "" ;
+        bool active = false;
+
+        void GetData()
+        {
+            name = tbxName.Text;
+            price = float.Parse(tbxPrice.Text);
+            category = cmbCategory.Text; 
+
+            if (cbxActive.Checked)
+            {
+                active = true;
+            }
+            else
+            {
+                active = false;
+            }
+        }
+        void CleanData()
+        {
+            tbxName.Text = "";
+            tbxPrice.Text = "";
+            cmbCategory.SelectedIndex = 0;
+            cbxActive.Checked = false;
+        }
+
         private void pbxBack_MouseEnter(object sender, EventArgs e)
         {
             pbxBack.BackgroundImage = ProjetoFinal.Properties.Resources.Back;

@@ -18,6 +18,41 @@ namespace ProjetoFinal
             InitializeComponent();
         }
 
+        string name = "";
+        string email = "";
+        string password = "";
+        string confPassword = "";
+        string profile = "";
+        bool active = false;
+
+        void GetData()
+        {
+            name = tbxName.Text;
+            email = tbxEmail.Text;
+            password = tbxPassword.Text;
+            profile = cmbProfile.Text;
+
+            if (cbxActive.Checked)
+            {
+                active = true;
+            }
+            else
+            {
+                active = false;
+            }
+        }
+
+        void CleanData()
+        {
+
+            tbxName.Text = "";
+            tbxEmail.Text = "";
+            tbxPassword.Text = "";
+            tbxConfPassword.Text = "";
+            cmbProfile.SelectedIndex = 0;
+            cbxActive.Checked = false;
+        }
+
         private void pbxBack_MouseEnter(object sender, EventArgs e)
         {
             pbxBack.BackgroundImage = ProjetoFinal.Properties.Resources.Back;

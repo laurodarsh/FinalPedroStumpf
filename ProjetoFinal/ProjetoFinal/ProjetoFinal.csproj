@@ -207,6 +207,7 @@
     <Content Include="Icons\User Profile - Copy.png" />
     <Content Include="Icons\User Profile.png" />
     <Content Include="Icons\User.png" />
+    <None Include="Resources\User - Copy1.png" />
     <None Include="Resources\Save - Copy.png" />
     <None Include="Resources\delete - Copy.png" />
     <None Include="Resources\Add - Copy.png" />
