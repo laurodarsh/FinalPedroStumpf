@@ -55,7 +55,7 @@ namespace ProjetoFinal
 
         private void pbxUserProfile_MouseEnter(object sender, EventArgs e)
         {
-            pbxUserProfile.BackgroundImage = ProjetoFinal.Properties.Resources.User___Copy;
+            pbxUserProfile.BackgroundImage = ProjetoFinal.Properties.Resources.User___Copy1;
             lblUserProfile.Visible = true;
         }
         private void pbxUserProfile_MouseLeave(object sender, EventArgs e)

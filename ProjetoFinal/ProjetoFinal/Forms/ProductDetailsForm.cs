@@ -13,18 +13,47 @@ namespace ProjetoFinal
 {
     public partial class ProductDetailsForm : Form
     {
+
         public ProductDetailsForm()
         {
             InitializeComponent();
         }
 
+        string name = "" ;
+        float price = 0 ;
+        string category = "" ;
+        bool active = false;
+
+        void GetData()
+        {
+            name = tbxName.Text;
+            price = float.Parse(tbxPrice.Text);
+            category = cmbCategory.Text; 
+
+            if (cbxActive.Checked)
+            {
+                active = true;
+            }
+            else
+            {
+                active = false;
+            }
+        }
+        void CleanData()
+        {
+            tbxName.Text = "";
+            tbxPrice.Text = "";
+            cmbCategory.SelectedIndex = 0;
+            cbxActive.Checked = false;
+        }
+
         private void pbxBack_MouseEnter(object sender, EventArgs e)
         {
-            pbxBack.BackgroundImage = ProjetoFinal.Properties.Resources.Back;
+            pbxBack.BackgroundImage = ProjetoFinal.Properties.Resources.Back___Copy;
         }
         private void pbxBack_MouseLeave(object sender, EventArgs e)
         {
-            pbxBack.BackgroundImage = ProjetoFinal.Properties.Resources.Back___Copy;
+            pbxBack.BackgroundImage = ProjetoFinal.Properties.Resources.Back;
         }
         private void pbxBack_Click(object sender, EventArgs e)
         {

@@ -17,13 +17,35 @@ namespace ProjetoFinal.Forms
             InitializeComponent();
         }
 
+        string name = "";
+        bool active = false;
+
+        void GetData()
+        {
+            name = tbxName.Text;
+            if (cbxActive.Checked)
+            {
+                active = true;
+            }
+            else
+            {
+                active = false;
+            }
+
+        }
+        void CleanData()
+        {
+            tbxName.Text = "";
+            cbxActive.Checked = false;
+        }
+
         private void pbxBack_MouseEnter(object sender, EventArgs e)
         {
-            pbxBack.BackgroundImage = ProjetoFinal.Properties.Resources.Back;
+            pbxBack.BackgroundImage = ProjetoFinal.Properties.Resources.Back___Copy;
         }
         private void pbxBack_MouseLeave(object sender, EventArgs e)
         {
-            pbxBack.BackgroundImage = ProjetoFinal.Properties.Resources.Back___Copy;
+            pbxBack.BackgroundImage = ProjetoFinal.Properties.Resources.Back;
         }
         private void pbxBack_Click(object sender, EventArgs e)
         {
