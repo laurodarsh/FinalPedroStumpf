@@ -19,7 +19,7 @@ namespace ProjetoFinal.Forms
 
         private void pbxBack_MouseEnter(object sender, EventArgs e)
         {
-            pbxBack.BackgroundImage = ProjetoFinal.Properties.Resources.Back___Copy;
+            pbxBack.BackgroundImage = ProjetoFinal.Properties.Resources.BackRed;
         }
         private void pbxBack_MouseLeave(object sender, EventArgs e)
         {
@@ -34,7 +34,7 @@ namespace ProjetoFinal.Forms
 
         private void pbxAdd_MouseEnter(object sender, EventArgs e)
         {
-            pbxAdd.BackgroundImage = ProjetoFinal.Properties.Resources.Add___Copy;
+            pbxAdd.BackgroundImage = ProjetoFinal.Properties.Resources.AddGreen;
         }
         private void pbxAdd_MouseLeave(object sender, EventArgs e)
         {
@@ -49,7 +49,7 @@ namespace ProjetoFinal.Forms
 
         private void pbxSearch_MouseEnter(object sender, EventArgs e)
         {
-            pbxSearch.BackgroundImage = ProjetoFinal.Properties.Resources.search___Copy;
+            pbxSearch.BackgroundImage = ProjetoFinal.Properties.Resources.searchGrey;
         }
         private void pbxSearch_MouseLeave(object sender, EventArgs e)
         {
@@ -58,7 +58,7 @@ namespace ProjetoFinal.Forms
 
         private void pbxEdit_MouseEnter(object sender, EventArgs e)
         {
-            pbxEdit.BackgroundImage = ProjetoFinal.Properties.Resources.Edit___Copy;
+            pbxEdit.BackgroundImage = ProjetoFinal.Properties.Resources.EditGreen;
         }
         private void pbxEdit_MouseLeave(object sender, EventArgs e)
         {
@@ -73,7 +73,7 @@ namespace ProjetoFinal.Forms
 
         private void pbxDelete_MouseEnter(object sender, EventArgs e)
         {
-            pbxDelete.BackgroundImage = ProjetoFinal.Properties.Resources.delete___Copy;
+            pbxDelete.BackgroundImage = ProjetoFinal.Properties.Resources.deleteRed;
         }
         private void pbxDelete_MouseLeave(object sender, EventArgs e)
         {

@@ -21,7 +21,7 @@ namespace ProjetoFinal
 
         private void pbxProduct_MouseEnter(object sender, EventArgs e)
         {
-            pbxProduct.BackgroundImage = ProjetoFinal.Properties.Resources.Product___Copy;
+            pbxProduct.BackgroundImage = ProjetoFinal.Properties.Resources.ProductBrown;
             lblProduct.Visible = true;
         }
         private void pbxProduct_MouseLeave(object sender, EventArgs e)
@@ -72,7 +72,7 @@ namespace ProjetoFinal
 
         private void pbxCategory_MouseEnter(object sender, EventArgs e)
         {
-            pbxCategory.BackgroundImage = ProjetoFinal.Properties.Resources.Category___Copy;
+            pbxCategory.BackgroundImage = ProjetoFinal.Properties.Resources.CategoryBlue;
             lblCategory.Visible = true;
         }
         private void pbxCategory_MouseLeave(object sender, EventArgs e)
@@ -89,7 +89,7 @@ namespace ProjetoFinal
 
         private void pbxLog_MouseEnter(object sender, EventArgs e)
         {
-            pbxLog.BackgroundImage = ProjetoFinal.Properties.Resources.Log___Copy;
+            pbxLog.BackgroundImage = ProjetoFinal.Properties.Resources.LogBlue;
             lblLog.Visible = true;
         }
         private void pbxLog_MouseLeave(object sender, EventArgs e)

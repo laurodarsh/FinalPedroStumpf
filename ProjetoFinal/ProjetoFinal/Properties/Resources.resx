@@ -121,28 +121,28 @@
   <data name="Log" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Icons\Log.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Back - Copy" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="BackRed" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Back - Copy.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Edit - Copy" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="EditGreen" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Edit - Copy.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="User_Profile" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Icons\User Profile.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Add - Copy" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="AddGreen" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Add - Copy.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="User Profile - Copy" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\User Profile - Copy.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Category - Copy" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="CategoryBlue" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Category - Copy.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Back" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Icons\Back.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="delete - Copy" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="deleteRed" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\delete - Copy.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Save" type="System.Resources.ResXFileRef, System.Windows.Forms">
@@ -154,7 +154,7 @@
   <data name="User" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Icons\User.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Log - Copy" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="LogBlue" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Log - Copy.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Edit" type="System.Resources.ResXFileRef, System.Windows.Forms">
@@ -166,19 +166,19 @@
   <data name="Add" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Icons\Add.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="search - Copy" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="searchGrey" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\search - Copy.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="search" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Icons\search.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Save - Copy" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="SaveGrey" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Save - Copy.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="User - Copy" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\User - Copy.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Product - Copy" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="ProductBrown" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Product - Copy.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Category" type="System.Resources.ResXFileRef, System.Windows.Forms">

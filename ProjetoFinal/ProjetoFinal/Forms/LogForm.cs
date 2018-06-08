@@ -19,7 +19,7 @@ namespace ProjetoFinal
 
         private void pbxBack_MouseEnter(object sender, EventArgs e)
         {
-            pbxBack.BackgroundImage = ProjetoFinal.Properties.Resources.Back___Copy;
+            pbxBack.BackgroundImage = ProjetoFinal.Properties.Resources.BackRed;
         }
         private void pbxBack_MouseLeave(object sender, EventArgs e)
         {
@@ -34,7 +34,7 @@ namespace ProjetoFinal
 
         private void pbxSearch_MouseEnter(object sender, EventArgs e)
         {
-            pbxSearch.BackgroundImage = ProjetoFinal.Properties.Resources.search___Copy;
+            pbxSearch.BackgroundImage = ProjetoFinal.Properties.Resources.searchGrey;
         }
         private void pbxSearch_MouseLeave(object sender, EventArgs e)
         {
