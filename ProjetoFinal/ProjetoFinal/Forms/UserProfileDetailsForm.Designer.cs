@@ -45,7 +45,7 @@
             this.cbxActive.AutoSize = true;
             this.cbxActive.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbxActive.Location = new System.Drawing.Point(115, 81);
-            this.cbxActive.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbxActive.Margin = new System.Windows.Forms.Padding(4);
             this.cbxActive.Name = "cbxActive";
             this.cbxActive.Size = new System.Drawing.Size(18, 17);
             this.cbxActive.TabIndex = 10;
@@ -55,7 +55,7 @@
             // 
             this.tbxName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbxName.Location = new System.Drawing.Point(115, 32);
-            this.tbxName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbxName.Margin = new System.Windows.Forms.Padding(4);
             this.tbxName.Name = "tbxName";
             this.tbxName.Size = new System.Drawing.Size(132, 24);
             this.tbxName.TabIndex = 9;
@@ -89,7 +89,7 @@
             this.pbxDelete.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pbxDelete.ErrorImage = global::ProjetoFinal.Properties.Resources.delete;
             this.pbxDelete.Location = new System.Drawing.Point(316, 270);
-            this.pbxDelete.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pbxDelete.Margin = new System.Windows.Forms.Padding(4);
             this.pbxDelete.Name = "pbxDelete";
             this.pbxDelete.Size = new System.Drawing.Size(47, 37);
             this.pbxDelete.TabIndex = 13;
@@ -104,11 +104,12 @@
             this.pbxSave.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pbxSave.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pbxSave.Location = new System.Drawing.Point(261, 270);
-            this.pbxSave.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pbxSave.Margin = new System.Windows.Forms.Padding(4);
             this.pbxSave.Name = "pbxSave";
             this.pbxSave.Size = new System.Drawing.Size(47, 37);
             this.pbxSave.TabIndex = 12;
             this.pbxSave.TabStop = false;
+            this.pbxSave.Click += new System.EventHandler(this.pbxSave_Click);
             this.pbxSave.MouseEnter += new System.EventHandler(this.pbxSave_MouseEnter);
             this.pbxSave.MouseLeave += new System.EventHandler(this.pbxSave_MouseLeave);
             // 
@@ -118,7 +119,7 @@
             this.pbxBack.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pbxBack.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pbxBack.Location = new System.Drawing.Point(16, 270);
-            this.pbxBack.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pbxBack.Margin = new System.Windows.Forms.Padding(4);
             this.pbxBack.Name = "pbxBack";
             this.pbxBack.Size = new System.Drawing.Size(47, 37);
             this.pbxBack.TabIndex = 11;
@@ -140,7 +141,7 @@
             this.Controls.Add(this.tbxName);
             this.Controls.Add(this.lblActive);
             this.Controls.Add(this.lblName);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "UserProfileDetailsForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Perfil de Usuário";

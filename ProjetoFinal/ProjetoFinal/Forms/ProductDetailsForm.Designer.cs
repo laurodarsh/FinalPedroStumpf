@@ -142,7 +142,6 @@
             this.pbxAdd.Size = new System.Drawing.Size(47, 37);
             this.pbxAdd.TabIndex = 9;
             this.pbxAdd.TabStop = false;
-            this.pbxAdd.Click += new System.EventHandler(this.pbxAdd_Click);
             this.pbxAdd.MouseEnter += new System.EventHandler(this.pbxAdd_MouseEnter);
             this.pbxAdd.MouseLeave += new System.EventHandler(this.pbxAdd_MouseLeave);
             // 
