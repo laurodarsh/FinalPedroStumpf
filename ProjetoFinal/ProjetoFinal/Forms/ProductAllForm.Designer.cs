@@ -46,9 +46,14 @@
             // 
             // dgvLog
             // 
+            this.dgvLog.AllowUserToAddRows = false;
+            this.dgvLog.AllowUserToDeleteRows = false;
             this.dgvLog.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvLog.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
             this.dgvLog.Location = new System.Drawing.Point(16, 50);
+            this.dgvLog.MultiSelect = false;
             this.dgvLog.Name = "dgvLog";
+            this.dgvLog.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvLog.Size = new System.Drawing.Size(406, 210);
             this.dgvLog.TabIndex = 22;
             // 
@@ -114,7 +119,7 @@
             // 
             // pbxBack
             // 
-            this.pbxBack.BackgroundImage = ProjetoFinal.Properties.Resources.Back;
+            this.pbxBack.BackgroundImage = global::ProjetoFinal.Properties.Resources.Back;
             this.pbxBack.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pbxBack.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pbxBack.Location = new System.Drawing.Point(16, 266);

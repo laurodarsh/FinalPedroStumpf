@@ -83,7 +83,7 @@ namespace ProjetoFinal.Forms
                 GetData();
 
                 sqlConnect.Open();
-                string sql = "INSERT INTO CATEGORY(NAME, ACTIVE) VALUES (@name, @active)";
+                string sql = "INSERT INTO USER_PROFILE(NAME, ACTIVE) VALUES (@name, @active)";
 
                 SqlCommand cmd = new SqlCommand(sql, sqlConnect);
 
@@ -98,7 +98,7 @@ namespace ProjetoFinal.Forms
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Erro ao adicionar categoria!" + ex.Message);
+                MessageBox.Show("Erro ao adicionar perfil!" + ex.Message);
                 CleanData();
             }
             finally

@@ -8,9 +8,9 @@ namespace ProjetoFinal
 {
     public class Category
     {
-        int id;
-        string name;
-        bool active;
+        private int id;
+        private string name;
+        private bool active;
 
         public int Id
         {
@@ -53,6 +53,13 @@ namespace ProjetoFinal
 
         public Category(string name, bool active)
         {
+            this.Name = name;
+            this.Active = active;
+        }
+
+        public Category(int id, string name, bool active)
+        {
+            this.Id = id;
             this.Name = name;
             this.Active = active;
         }
