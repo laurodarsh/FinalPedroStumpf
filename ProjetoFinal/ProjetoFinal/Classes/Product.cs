@@ -73,5 +73,9 @@ namespace ProjetoFinal.Classes
             this.Active = active;
             this.category = category;
         }
+        public Product()
+        {
+
+        }
     }
 }

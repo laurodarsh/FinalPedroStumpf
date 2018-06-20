@@ -19,6 +19,58 @@ namespace ProjetoFinal
             InitializeComponent();
         }
 
+        public CategoryDetailsForm(int idCategory)
+        {
+
+            InitializeComponent();
+
+            lblId.Text = idCategory.ToString(); //-------
+
+            SqlConnection sqlConnect = new SqlConnection(connectionString);
+
+            if (!string.IsNullOrEmpty(lblId.Text))
+            {
+                try
+                {
+                    //Conectar
+                    sqlConnect.Open();
+
+                    SqlCommand cmd = new SqlCommand("SELECT * FROM CATEGORY WHERE ID = @id", sqlConnect);
+                    //SqlCommand cmd = new SqlCommand("SELECT * FROM CATEGORY WHERE ID = " + idCategory.ToString(), sqlConnect);
+
+                    cmd.Parameters.Add(new SqlParameter("@id", idCategory));
+
+                    Category category = new Category(); //------
+
+                    using (SqlDataReader reader = cmd.ExecuteReader()) //-----
+                    {
+                        while (reader.Read())
+                        {
+                            category.Id = Int32.Parse(reader["ID"].ToString());
+                            category.Name = reader["NAME"].ToString();
+                            category.Active = bool.Parse(reader["ACTIVE"].ToString());
+                        }
+                    }
+
+                    tbxName.Text = category.Name;
+                    cbxActive.Checked = category.Active;
+
+
+                }
+                catch (Exception EX)
+                {
+                    //Tratar exce??es
+                    throw;
+                }
+                finally
+                {
+                    //Fechar
+                    sqlConnect.Close();
+                }
+            }
+        }
+
+
         string connectionString = "workstation id=StockControlData.mssql.somee.com;packet size=4096;user id=luacademy_SQLLogin_1;pwd=msctq6gvt3;data source=StockControlData.mssql.somee.com;persist security info=False;initial catalog=StockControlData";
         string name = "";
         bool active = false;
@@ -26,7 +78,7 @@ namespace ProjetoFinal
         void GetData()
         {
             name = tbxName.Text;
-            if (cbxActive.Checked )
+            if (cbxActive.Checked)
             {
                 active = true;
             }
@@ -82,7 +134,7 @@ namespace ProjetoFinal
             try
             {
                 GetData();
-                   
+
                 sqlConnect.Open();
                 string sql = "INSERT INTO CATEGORY(NAME, ACTIVE) VALUES (@name, @active)";
 
@@ -95,7 +147,7 @@ namespace ProjetoFinal
 
                 MessageBox.Show("Adicionado com sucesso!");
 
-                CleanData();          
+                CleanData();
             }
             catch (Exception ex)
             {
@@ -105,6 +157,38 @@ namespace ProjetoFinal
             finally
             {
                 sqlConnect.Close();
+            }
+        }
+
+        private void pbxDelete_Click(object sender, EventArgs e)
+        {
+            if (!string.IsNullOrEmpty(lblId.Text)) //-----
+            {
+                SqlConnection sqlConnect = new SqlConnection(connectionString);
+
+                try
+                {
+                    sqlConnect.Open();
+                    string sql = "UPDATE CATEGORY SET ACTIVE = @active WHERE ID = @id";
+
+                    SqlCommand cmd = new SqlCommand(sql, sqlConnect);
+
+                    cmd.Parameters.Add(new SqlParameter("@id", Int32.Parse(lblId.Text)));
+                    cmd.Parameters.Add(new SqlParameter("@active", false));
+
+                    cmd.ExecuteNonQuery();
+
+                    MessageBox.Show("categoria inativa!");
+                }
+                catch (Exception Ex)
+                {
+                    MessageBox.Show("Erro ao desativar esta categoria!" + "\n\n" + Ex.Message);
+                    throw;
+                }
+                finally
+                {
+                    sqlConnect.Close();
+                }
             }
         }
     }

@@ -104,7 +104,9 @@ namespace ProjetoFinal.Forms
         }
         private void pbxEdit_Click(object sender, EventArgs e)
         {
-            CategoryDetailsForm categoryDetailsForm = new CategoryDetailsForm();
+            int idCategory = Int32.Parse(dgvCategory.SelectedRows[0].Cells[0].Value.ToString());
+
+            CategoryDetailsForm categoryDetailsForm = new CategoryDetailsForm(idCategory);
             categoryDetailsForm.Show();
             this.Hide();
         }
@@ -125,6 +127,38 @@ namespace ProjetoFinal.Forms
         private void pbxDelete_MouseLeave(object sender, EventArgs e)
         {
             pbxDelete.BackgroundImage = ProjetoFinal.Properties.Resources.delete;
+        }
+
+        private void pbxDelete_Click(object sender, EventArgs e)
+        {
+            int idCategory = Int32.Parse(dgvCategory.SelectedRows[0].Cells[0].Value.ToString());
+        
+            SqlConnection sqlConnect = new SqlConnection(connectionString);
+
+            try
+            {
+                sqlConnect.Open();
+                string sql = "UPDATE CATEGORY SET ACTIVE = @active WHERE ID = @id";
+
+                SqlCommand cmd = new SqlCommand(sql, sqlConnect);
+
+                cmd.Parameters.Add(new SqlParameter("@id", idCategory));
+                cmd.Parameters.Add(new SqlParameter("@active", false));
+
+                cmd.ExecuteNonQuery();
+
+                MessageBox.Show("Categoria inativa!");
+                ShowData();
+            }
+            catch (Exception Ex)
+            {
+                MessageBox.Show("Erro ao desativar essa categoria!" + "\n\n" + Ex.Message);
+                throw;
+            }
+            finally
+            {
+                sqlConnect.Close();
+            }
         }
     }
 }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ProjetoFinal.Classes;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -17,6 +18,56 @@ namespace ProjetoFinal.Forms
         {
             InitializeComponent();
         }
+
+        public UserProfileDetailsForm(int idUserProfile)
+        {
+
+            InitializeComponent();
+
+            lblId.Text = idUserProfile.ToString(); //-------
+
+            SqlConnection sqlConnect = new SqlConnection(connectionString);
+
+            if (!string.IsNullOrEmpty(lblId.Text))
+            {
+                try
+                {
+                    //Conectar
+                    sqlConnect.Open();
+
+                    SqlCommand cmd = new SqlCommand("SELECT * FROM USER_PROFILE WHERE ID = @id", sqlConnect);
+                    //SqlCommand cmd = new SqlCommand("SELECT * FROM CATEGORY WHERE ID = " + idCategory.ToString(), sqlConnect);
+
+                    cmd.Parameters.Add(new SqlParameter("@id", idUserProfile));
+
+                    UserProfile userProfile = new UserProfile(); //------
+
+                    using (SqlDataReader reader = cmd.ExecuteReader()) //-----
+                    {
+                        while (reader.Read())
+                        {
+                            userProfile.Id = Int32.Parse(reader["ID"].ToString());
+                            userProfile.Name = reader["NAME"].ToString();
+                            userProfile.Active = bool.Parse(reader["ACTIVE"].ToString());
+                        }
+                    }
+
+                    tbxName.Text = userProfile.Name;
+                    cbxActive.Checked = userProfile.Active;
+                }
+                catch (Exception EX)
+                {
+                    //Tratar exce??es
+                    throw;
+                }
+                finally
+                {
+                    //Fechar
+                    sqlConnect.Close();
+                }
+            }
+        }
+
 
         string connectionString = "workstation id=StockControlData.mssql.somee.com;packet size=4096;user id=luacademy_SQLLogin_1;pwd=msctq6gvt3;data source=StockControlData.mssql.somee.com;persist security info=False;initial catalog=StockControlData";
         string name = "";
@@ -105,6 +156,38 @@ namespace ProjetoFinal.Forms
             {
                 sqlConnect.Close();
             }
+        }
+
+        private void pbxDelete_Click(object sender, EventArgs e)
+        {
+            if (!string.IsNullOrEmpty(lblId.Text)) //-----
+            {
+                SqlConnection sqlConnect = new SqlConnection(connectionString);
+
+                try
+                {
+                    sqlConnect.Open();
+                    string sql = "UPDATE USER_PROFILE SET ACTIVE = @active WHERE ID = @id";
+
+                    SqlCommand cmd = new SqlCommand(sql, sqlConnect);
+
+                    cmd.Parameters.Add(new SqlParameter("@id", Int32.Parse(lblId.Text)));
+                    cmd.Parameters.Add(new SqlParameter("@active", false));
+
+                    cmd.ExecuteNonQuery();
+
+                    MessageBox.Show("Perfil inativo!");
+                }
+                catch (Exception Ex)
+                {
+                    MessageBox.Show("Erro ao desativar este Perfil!" + "\n\n" + Ex.Message);
+                    throw;
+                }
+                finally
+                {
+                    sqlConnect.Close();
+                }
+                }
         }
     }
 }

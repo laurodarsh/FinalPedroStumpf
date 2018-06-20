@@ -63,5 +63,9 @@ namespace ProjetoFinal.Classes
             this.Name = name;
             this.Active = active;
         }
+        public UserProfile()
+        {
+
+        }
     }
 }

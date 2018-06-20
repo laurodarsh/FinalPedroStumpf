@@ -55,9 +55,9 @@ namespace ProjetoFinal
         private void ResizeDataGridView()
         {
             dgvLog.Columns["ID"].Visible = false;
-            dgvLog.Columns["DESCRIPTION"].HeaderText = "Description";
-            dgvLog.Columns["TYPE"].HeaderText = "Type";
-            dgvLog.Columns["DATE"].HeaderText = "Date";
+            dgvLog.Columns["DESCRIPTION"].HeaderText = "Descrição";
+            dgvLog.Columns["TYPE"].HeaderText = "Tipo";
+            dgvLog.Columns["DATE"].HeaderText = "Data";
 
             foreach (DataGridViewColumn col in dgvLog.Columns)
             {

@@ -63,5 +63,9 @@ namespace ProjetoFinal
             this.Name = name;
             this.Active = active;
         }
+        public Category()
+        {
+
+        }
     }
 }

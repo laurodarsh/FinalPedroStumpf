@@ -43,6 +43,7 @@
             this.pbxSave = new System.Windows.Forms.PictureBox();
             this.pbxDelete = new System.Windows.Forms.PictureBox();
             this.pbxBack = new System.Windows.Forms.PictureBox();
+            this.lblId = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pbxSave)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxDelete)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxBack)).BeginInit();
@@ -52,10 +53,9 @@
             // 
             this.lblName.AutoSize = true;
             this.lblName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblName.Location = new System.Drawing.Point(17, 21);
-            this.lblName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblName.Location = new System.Drawing.Point(13, 17);
             this.lblName.Name = "lblName";
-            this.lblName.Size = new System.Drawing.Size(63, 20);
+            this.lblName.Size = new System.Drawing.Size(53, 17);
             this.lblName.TabIndex = 0;
             this.lblName.Text = "Nome :";
             // 
@@ -63,10 +63,9 @@
             // 
             this.lblEmail.AutoSize = true;
             this.lblEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEmail.Location = new System.Drawing.Point(17, 64);
-            this.lblEmail.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblEmail.Location = new System.Drawing.Point(13, 52);
             this.lblEmail.Name = "lblEmail";
-            this.lblEmail.Size = new System.Drawing.Size(61, 20);
+            this.lblEmail.Size = new System.Drawing.Size(50, 17);
             this.lblEmail.TabIndex = 1;
             this.lblEmail.Text = "Email :";
             // 
@@ -74,10 +73,9 @@
             // 
             this.lblPassword.AutoSize = true;
             this.lblPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPassword.Location = new System.Drawing.Point(17, 112);
-            this.lblPassword.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblPassword.Location = new System.Drawing.Point(13, 91);
             this.lblPassword.Name = "lblPassword";
-            this.lblPassword.Size = new System.Drawing.Size(66, 20);
+            this.lblPassword.Size = new System.Drawing.Size(57, 17);
             this.lblPassword.TabIndex = 2;
             this.lblPassword.Text = "Senha :";
             // 
@@ -85,10 +83,9 @@
             // 
             this.lblPasswordConf.AutoSize = true;
             this.lblPasswordConf.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPasswordConf.Location = new System.Drawing.Point(17, 151);
-            this.lblPasswordConf.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblPasswordConf.Location = new System.Drawing.Point(13, 123);
             this.lblPasswordConf.Name = "lblPasswordConf";
-            this.lblPasswordConf.Size = new System.Drawing.Size(110, 20);
+            this.lblPasswordConf.Size = new System.Drawing.Size(94, 17);
             this.lblPasswordConf.TabIndex = 3;
             this.lblPasswordConf.Text = "Conf. Senha :";
             // 
@@ -96,10 +93,9 @@
             // 
             this.lblProfile.AutoSize = true;
             this.lblProfile.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblProfile.Location = new System.Drawing.Point(17, 194);
-            this.lblProfile.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblProfile.Location = new System.Drawing.Point(13, 158);
             this.lblProfile.Name = "lblProfile";
-            this.lblProfile.Size = new System.Drawing.Size(58, 20);
+            this.lblProfile.Size = new System.Drawing.Size(48, 17);
             this.lblProfile.TabIndex = 4;
             this.lblProfile.Text = "Perfil :";
             // 
@@ -107,10 +103,9 @@
             // 
             this.lblActive.AutoSize = true;
             this.lblActive.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblActive.Location = new System.Drawing.Point(17, 233);
-            this.lblActive.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblActive.Location = new System.Drawing.Point(13, 189);
             this.lblActive.Name = "lblActive";
-            this.lblActive.Size = new System.Drawing.Size(56, 20);
+            this.lblActive.Size = new System.Drawing.Size(47, 17);
             this.lblActive.TabIndex = 5;
             this.lblActive.Text = "Ativo :";
             // 
@@ -118,57 +113,51 @@
             // 
             this.cbxActive.AutoSize = true;
             this.cbxActive.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbxActive.Location = new System.Drawing.Point(151, 234);
-            this.cbxActive.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbxActive.Location = new System.Drawing.Point(113, 190);
             this.cbxActive.Name = "cbxActive";
-            this.cbxActive.Size = new System.Drawing.Size(18, 17);
+            this.cbxActive.Size = new System.Drawing.Size(15, 14);
             this.cbxActive.TabIndex = 6;
             this.cbxActive.UseVisualStyleBackColor = true;
             // 
             // tbxName
             // 
             this.tbxName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbxName.Location = new System.Drawing.Point(151, 17);
-            this.tbxName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbxName.Location = new System.Drawing.Point(113, 14);
             this.tbxName.Name = "tbxName";
-            this.tbxName.Size = new System.Drawing.Size(132, 24);
+            this.tbxName.Size = new System.Drawing.Size(100, 21);
             this.tbxName.TabIndex = 7;
             // 
             // tbxEmail
             // 
             this.tbxEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbxEmail.Location = new System.Drawing.Point(151, 60);
-            this.tbxEmail.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbxEmail.Location = new System.Drawing.Point(113, 49);
             this.tbxEmail.Name = "tbxEmail";
-            this.tbxEmail.Size = new System.Drawing.Size(132, 24);
+            this.tbxEmail.Size = new System.Drawing.Size(100, 21);
             this.tbxEmail.TabIndex = 8;
             // 
             // tbxPassword
             // 
             this.tbxPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbxPassword.Location = new System.Drawing.Point(151, 108);
-            this.tbxPassword.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbxPassword.Location = new System.Drawing.Point(113, 88);
             this.tbxPassword.Name = "tbxPassword";
-            this.tbxPassword.Size = new System.Drawing.Size(132, 24);
+            this.tbxPassword.Size = new System.Drawing.Size(100, 21);
             this.tbxPassword.TabIndex = 9;
             // 
             // tbxConfPassword
             // 
             this.tbxConfPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbxConfPassword.Location = new System.Drawing.Point(151, 151);
-            this.tbxConfPassword.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbxConfPassword.Location = new System.Drawing.Point(113, 123);
             this.tbxConfPassword.Name = "tbxConfPassword";
-            this.tbxConfPassword.Size = new System.Drawing.Size(132, 24);
+            this.tbxConfPassword.Size = new System.Drawing.Size(100, 21);
             this.tbxConfPassword.TabIndex = 10;
             // 
             // cmbProfile
             // 
             this.cmbProfile.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbProfile.FormattingEnabled = true;
-            this.cmbProfile.Location = new System.Drawing.Point(151, 191);
-            this.cmbProfile.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cmbProfile.Location = new System.Drawing.Point(113, 155);
             this.cmbProfile.Name = "cmbProfile";
-            this.cmbProfile.Size = new System.Drawing.Size(132, 26);
+            this.cmbProfile.Size = new System.Drawing.Size(100, 23);
             this.cmbProfile.TabIndex = 11;
             // 
             // pbxSave
@@ -177,10 +166,9 @@
             this.pbxSave.BackgroundImage = global::ProjetoFinal.Properties.Resources.Save;
             this.pbxSave.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pbxSave.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pbxSave.Location = new System.Drawing.Point(261, 270);
-            this.pbxSave.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pbxSave.Location = new System.Drawing.Point(196, 219);
             this.pbxSave.Name = "pbxSave";
-            this.pbxSave.Size = new System.Drawing.Size(47, 37);
+            this.pbxSave.Size = new System.Drawing.Size(35, 30);
             this.pbxSave.TabIndex = 15;
             this.pbxSave.TabStop = false;
             this.pbxSave.Click += new System.EventHandler(this.pbxSave_Click);
@@ -192,10 +180,9 @@
             this.pbxDelete.BackgroundImage = global::ProjetoFinal.Properties.Resources.delete;
             this.pbxDelete.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pbxDelete.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pbxDelete.Location = new System.Drawing.Point(316, 270);
-            this.pbxDelete.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pbxDelete.Location = new System.Drawing.Point(237, 219);
             this.pbxDelete.Name = "pbxDelete";
-            this.pbxDelete.Size = new System.Drawing.Size(47, 37);
+            this.pbxDelete.Size = new System.Drawing.Size(35, 30);
             this.pbxDelete.TabIndex = 14;
             this.pbxDelete.TabStop = false;
             this.pbxDelete.MouseEnter += new System.EventHandler(this.pbxDelete_MouseEnter);
@@ -206,22 +193,31 @@
             this.pbxBack.BackgroundImage = global::ProjetoFinal.Properties.Resources.Back;
             this.pbxBack.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pbxBack.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pbxBack.Location = new System.Drawing.Point(16, 270);
-            this.pbxBack.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pbxBack.Location = new System.Drawing.Point(12, 219);
             this.pbxBack.Name = "pbxBack";
-            this.pbxBack.Size = new System.Drawing.Size(47, 37);
+            this.pbxBack.Size = new System.Drawing.Size(35, 30);
             this.pbxBack.TabIndex = 13;
             this.pbxBack.TabStop = false;
             this.pbxBack.Click += new System.EventHandler(this.pbxBack_Click);
             this.pbxBack.MouseEnter += new System.EventHandler(this.pbxBack_MouseEnter);
             this.pbxBack.MouseLeave += new System.EventHandler(this.pbxBack_MouseLeave);
             // 
+            // lblId
+            // 
+            this.lblId.AutoSize = true;
+            this.lblId.Location = new System.Drawing.Point(70, 236);
+            this.lblId.Name = "lblId";
+            this.lblId.Size = new System.Drawing.Size(0, 13);
+            this.lblId.TabIndex = 16;
+            this.lblId.Visible = false;
+            // 
             // UserDetailForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightGray;
-            this.ClientSize = new System.Drawing.Size(379, 321);
+            this.ClientSize = new System.Drawing.Size(284, 261);
+            this.Controls.Add(this.lblId);
             this.Controls.Add(this.pbxSave);
             this.Controls.Add(this.pbxDelete);
             this.Controls.Add(this.pbxBack);
@@ -237,7 +233,6 @@
             this.Controls.Add(this.lblPassword);
             this.Controls.Add(this.lblEmail);
             this.Controls.Add(this.lblName);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "UserDetailForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Usuario";
@@ -266,5 +261,6 @@
         private System.Windows.Forms.PictureBox pbxBack;
         private System.Windows.Forms.PictureBox pbxDelete;
         private System.Windows.Forms.PictureBox pbxSave;
+        private System.Windows.Forms.Label lblId;
     }
 }
