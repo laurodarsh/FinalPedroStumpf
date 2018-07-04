@@ -23,6 +23,40 @@ namespace ProjetoFinal
             LoadComboBox();
         }
 
+        private void InitializeComboBox(ComboBox cbxProduct, int indexCombo)
+        {
+            cmbCategory.Items.Add("Selecione.. ");
+            SqlConnection sqlConnect = new SqlConnection(connectionString);
+
+            try
+            {
+                //Conectar
+                sqlConnect.Open();
+
+                SqlCommand cmd = new SqlCommand("SELECT * FROM CATEGORY", sqlConnect);
+
+                using (SqlDataReader reader = cmd.ExecuteReader()) //-----
+                {
+                    while (reader.Read())
+                    {
+                        cmbCategory.Items.Add(reader["NAME"].ToString());
+                    }
+                }
+
+                cmbCategory.SelectedItem = cmbCategory.Items[indexCombo];
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("erro de acesso ao banco de dados. " + ex.Message);
+            }
+            finally
+            {
+                sqlConnect.Close();
+            }
+        }
+
+
+
         public ProductDetailsForm(int idProduct)
         {
 
@@ -54,12 +88,18 @@ namespace ProjetoFinal
                             product.Name = reader["NAME"].ToString();
                             product.Active = bool.Parse(reader["ACTIVE"].ToString());
                             product.Price = float.Parse(reader["PRICE"].ToString());
+                            int indexCombo = 0;
+                            if (product.Category != null)
+                            {
+                                indexCombo = product.Category.Id;
+                            }
+                            InitializeComboBox(cmbCategory, indexCombo);
                         }
                     }
 
                     tbxName.Text = product.Name;
                     cbxActive.Checked = product.Active;
-
+                    tbxPrice.Text = product.Price.ToString();
 
                 }
                 catch (Exception EX)
@@ -165,41 +205,107 @@ namespace ProjetoFinal
 
         private void pbxDelete_Click(object sender, EventArgs e)
         {
+            if (!string.IsNullOrEmpty(lblId.Text)) //-----
+            {
+                SqlConnection sqlConnect = new SqlConnection(connectionString);
 
+                try
+                {
+                    sqlConnect.Open();
+                    string sql = "UPDATE PRODUCT SET ACTIVE = @active WHERE ID = @id";
+
+                    SqlCommand cmd = new SqlCommand(sql, sqlConnect);
+
+                    cmd.Parameters.Add(new SqlParameter("@id", Int32.Parse(lblId.Text)));
+                    cmd.Parameters.Add(new SqlParameter("@active", false));
+
+                    cmd.ExecuteNonQuery();
+
+                    MessageBox.Show("produto inativo!");
+                }
+                catch (Exception Ex)
+                {
+                    MessageBox.Show("Erro ao desativar este produto!" + "\n\n" + Ex.Message);
+                    throw;
+                }
+                finally
+                {
+                    sqlConnect.Close();
+                }
+            }
         }
-
         private void pbxSave_Click(object sender, EventArgs e)
         {
-            SqlConnection sqlConnect = new SqlConnection(connectionString);
-            try
+            if (string.IsNullOrEmpty(lblId.Text))
             {
-                GetData();
 
-                sqlConnect.Open();
-                string sql = "INSERT INTO PRODUCT(NAME, PRICE, ACTIVE, FK_PRODUCT) VALUES (@name, @price, @active, @category)";
+                SqlConnection sqlConnect = new SqlConnection(connectionString);
+                try
+                {
+                    GetData();
 
-                SqlCommand cmd = new SqlCommand(sql, sqlConnect);
+                    sqlConnect.Open();
+                    string sql = "INSERT INTO PRODUCT(NAME, PRICE, ACTIVE, FK_PRODUCT) VALUES (@name, @price, @active, @category)";
 
-                cmd.Parameters.Add(new SqlParameter("@name", name));
-                cmd.Parameters.Add(new SqlParameter("@price", price));
-                cmd.Parameters.Add(new SqlParameter("@active", active));
-                cmd.Parameters.Add(new SqlParameter("@category", ((Category)cmbCategory.SelectedItem).Id));
-                cmd.ExecuteNonQuery();
+                    SqlCommand cmd = new SqlCommand(sql, sqlConnect);
 
-                MessageBox.Show("Adicionado com sucesso!");
-                CleanData();
+                    cmd.Parameters.Add(new SqlParameter("@name", name));
+                    cmd.Parameters.Add(new SqlParameter("@price", price));
+                    cmd.Parameters.Add(new SqlParameter("@active", active));
+                    cmd.Parameters.Add(new SqlParameter("@category", ((Category)cmbCategory.SelectedItem).Id));
+                    cmd.ExecuteNonQuery();
 
+                    MessageBox.Show("Adicionado com sucesso!");
+                    CleanData();
+
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Erro ao adicionar produto!" + ex.Message);
+                    CleanData();
+                }
+                finally
+                {
+                    sqlConnect.Close();
+
+                }
             }
-            catch (Exception ex)
+            else
             {
-                MessageBox.Show("Erro ao adicionar produto!" + ex.Message);
-                CleanData();
+                SqlConnection sqlConnect = new SqlConnection(connectionString);
+
+                try
+                {
+                    sqlConnect.Open();
+                    string sql = "UPDATE PRODUCT SET NAME = @name, ACTIVE = @active, PRICE = @price, FK_PRODUCT = @fk_product Where ID = @id";
+
+                    SqlCommand cmd = new SqlCommand(sql, sqlConnect);
+
+                    cmd.Parameters.Add(new SqlParameter("@name", this.tbxName.Text));
+                    cmd.Parameters.Add(new SqlParameter("@active", this.cbxActive.Checked));
+                    cmd.Parameters.Add(new SqlParameter("@price", this.tbxPrice.Text));
+
+                    cmd.Parameters.Add(new SqlParameter("@fk_product", ((Category)cmbCategory.SelectedItem).Id));
+
+                    cmd.ExecuteNonQuery();
+
+                    MessageBox.Show("Alterações salvas com sucesso!");
+                }
+                catch (Exception Ex)
+                {
+                    MessageBox.Show("Erro ao editar este produto!" + "\n\n" + Ex.Message);
+                    throw;
+                }
+                finally
+                {
+                    sqlConnect.Close();
+
+                    HomeForm homeForm = new HomeForm();
+                    homeForm.Show();
+                    this.Hide();
+                }
             }
-            finally
-            {
-                sqlConnect.Close();
-      
-            }
+;
         }
     }
 }

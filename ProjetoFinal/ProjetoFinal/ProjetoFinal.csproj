@@ -105,7 +105,6 @@
     <Compile Include="Forms\UserAllForm.Designer.cs">
       <DependentUpon>UserAllForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\UserDetailsForm1.cs" />
     <Compile Include="Forms\UserProfileAllForm.cs">
       <SubType>Form</SubType>
     </Compile>

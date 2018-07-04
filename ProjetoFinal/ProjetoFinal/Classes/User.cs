@@ -101,5 +101,9 @@ namespace ProjetoFinal.Classes
             this.UserProfile = userProfile;
             this.Active = active;
         }
+        public User()
+        {
+
+        }
     }
 }

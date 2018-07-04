@@ -66,12 +66,25 @@ namespace ProjetoFinal.Classes
             }
         }
 
+        public Category Category
+        {
+            get
+            {
+                return category;
+            }
+
+            set
+            {
+                category = value;
+            }
+        }
+
         public Product(string name, float price, bool active, Category category)
         {
             this.Name = name;
             this.Price = price;
             this.Active = active;
-            this.category = category;
+            this.Category = category;
         }
         public Product()
         {

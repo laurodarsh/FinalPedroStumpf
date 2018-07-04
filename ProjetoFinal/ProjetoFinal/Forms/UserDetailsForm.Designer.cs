@@ -1,6 +1,6 @@
 ﻿namespace ProjetoFinal
 {
-    partial class UserDetailForm
+    partial class UserDetailsForm
     {
         /// <summary>
         /// Required designer variable.
@@ -185,6 +185,7 @@
             this.pbxDelete.Size = new System.Drawing.Size(35, 30);
             this.pbxDelete.TabIndex = 14;
             this.pbxDelete.TabStop = false;
+            this.pbxDelete.Click += new System.EventHandler(this.pbxDelete_Click);
             this.pbxDelete.MouseEnter += new System.EventHandler(this.pbxDelete_MouseEnter);
             this.pbxDelete.MouseLeave += new System.EventHandler(this.pbxDelete_MouseLeave);
             // 

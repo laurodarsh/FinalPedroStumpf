@@ -99,7 +99,7 @@ namespace ProjetoFinal.Forms
         }
         private void pbxAdd_Click(object sender, EventArgs e)
         {
-            UserDetailForm userDetailForm = new UserDetailForm();
+            UserDetailsForm userDetailForm = new UserDetailsForm();
             userDetailForm.Show();
             this.Hide();
         }
@@ -123,8 +123,10 @@ namespace ProjetoFinal.Forms
         }
         private void pbxEdit_Click(object sender, EventArgs e)
         {
-            UserDetailForm userDetailForm = new UserDetailForm();
-            userDetailForm.Show();
+            int idUser = Int32.Parse(dgvUser.SelectedRows[0].Cells[0].Value.ToString());
+
+            UserDetailsForm userDetailsForm = new UserDetailsForm(idUser);
+            userDetailsForm.Show();
             this.Hide();
         }
 
