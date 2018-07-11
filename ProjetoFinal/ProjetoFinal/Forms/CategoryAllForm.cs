@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ProjetoFinal.Classes;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -148,6 +149,7 @@ namespace ProjetoFinal.Forms
                 cmd.ExecuteNonQuery();
 
                 MessageBox.Show("Categoria inativa!");
+                Log.SalvarLog("Categoria Excluída", "Exclusão", DateTime.Now);
                 ShowData();
             }
             catch (Exception Ex)

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ProjetoFinal.Classes;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -129,7 +130,35 @@ namespace ProjetoFinal.Forms
         }
         private void pbxDelete_Click(object sender, EventArgs e)
         {
+            int idProduct = Int32.Parse(dgvProduct.SelectedRows[0].Cells[0].Value.ToString());
 
+            SqlConnection sqlConnect = new SqlConnection(connectionString);
+
+            try
+            {
+                sqlConnect.Open();
+                string sql = "UPDATE PRODUCT SET ACTIVE = @active WHERE ID = @id";
+
+                SqlCommand cmd = new SqlCommand(sql, sqlConnect);
+
+                cmd.Parameters.Add(new SqlParameter("@id", idProduct));
+                cmd.Parameters.Add(new SqlParameter("@active", false));
+
+                cmd.ExecuteNonQuery();
+
+                MessageBox.Show("Produto inativo!");
+                Log.SalvarLog("Produto Excluído", "Exclusão", DateTime.Now);
+                ShowData();
+            }
+            catch (Exception Ex)
+            {
+                MessageBox.Show("Erro ao desativar Usuário!" + "\n\n" + Ex.Message);
+                throw;
+            }
+            finally
+            {
+                sqlConnect.Close();
+            }
         }
 
         private void pbxSearch_MouseEnter(object sender, EventArgs e)

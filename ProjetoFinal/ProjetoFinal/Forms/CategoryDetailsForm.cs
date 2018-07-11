@@ -1,4 +1,5 @@
-﻿using ProjetoFinal.Forms;
+﻿using ProjetoFinal.Classes;
+using ProjetoFinal.Forms;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -152,7 +153,7 @@ namespace ProjetoFinal
                     cmd.ExecuteNonQuery();
 
                     MessageBox.Show("Adicionado com sucesso!");
-
+                    Log.SalvarLog(" Categoria Adicionada", "Adição", DateTime.Now);
                     CleanData();
                 }
                 catch (Exception ex)
@@ -183,6 +184,7 @@ namespace ProjetoFinal
                     cmd.ExecuteNonQuery();
 
                     MessageBox.Show("Alterações salvas com sucesso!");
+                    Log.SalvarLog("Categoria Editada", "Edição", DateTime.Now);
                 }
                 catch (Exception Ex)
                 {
@@ -193,8 +195,8 @@ namespace ProjetoFinal
                 {
                     sqlConnect.Close();
 
-                    HomeForm homeForm = new HomeForm();
-                    homeForm.Show();
+                    CategoryAllForm categoryAllForm = new CategoryAllForm();
+                    categoryAllForm.Show();
                     this.Hide();
                 }
             }
@@ -220,6 +222,7 @@ namespace ProjetoFinal
                     cmd.ExecuteNonQuery();
 
                     MessageBox.Show("categoria inativa!");
+                    Log.SalvarLog("Categoria Excluída", "Exclusão", DateTime.Now);
                 }
                 catch (Exception Ex)
                 {

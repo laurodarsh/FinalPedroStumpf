@@ -147,6 +147,7 @@ namespace ProjetoFinal.Forms
                     cmd.ExecuteNonQuery();
 
                     MessageBox.Show("Adicionado com sucesso!");
+                    Log.SalvarLog("Perfil Adicionado", "Adição", DateTime.Now);
 
                     CleanData();
                 }
@@ -177,6 +178,7 @@ namespace ProjetoFinal.Forms
                     cmd.ExecuteNonQuery();
 
                     MessageBox.Show("Alterações salvas com sucesso!");
+                    Log.SalvarLog("Perfil Editado", "Edição", DateTime.Now);
                 }
                 catch (Exception Ex)
                 {
@@ -187,8 +189,8 @@ namespace ProjetoFinal.Forms
                 {
                     sqlConnect.Close();
 
-                    HomeForm homeForm = new HomeForm();
-                    homeForm.Show();
+                    UserProfileAllForm userProfileAllForm = new UserProfileAllForm();
+                    userProfileAllForm.Show();
                     this.Hide();
                 }
             }
@@ -214,6 +216,7 @@ namespace ProjetoFinal.Forms
                     cmd.ExecuteNonQuery();
 
                     MessageBox.Show("Perfil inativo!");
+                    Log.SalvarLog("Perfil Excluído", "Exclusão", DateTime.Now);
                 }
                 catch (Exception Ex)
                 {

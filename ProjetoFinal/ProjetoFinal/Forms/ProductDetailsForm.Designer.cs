@@ -160,6 +160,8 @@
             this.pbxSave.TabIndex = 16;
             this.pbxSave.TabStop = false;
             this.pbxSave.Click += new System.EventHandler(this.pbxSave_Click);
+            this.pbxSave.MouseEnter += new System.EventHandler(this.pbxSave_MouseEnter);
+            this.pbxSave.MouseLeave += new System.EventHandler(this.pbxSave_MouseLeave);
             // 
             // lblId
             // 

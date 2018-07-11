@@ -49,6 +49,7 @@
             this.dgvUserProfile.AllowUserToAddRows = false;
             this.dgvUserProfile.AllowUserToDeleteRows = false;
             this.dgvUserProfile.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvUserProfile.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
             this.dgvUserProfile.Location = new System.Drawing.Point(16, 50);
             this.dgvUserProfile.MultiSelect = false;
             this.dgvUserProfile.Name = "dgvUserProfile";

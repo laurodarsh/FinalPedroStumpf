@@ -140,6 +140,7 @@
             this.tbxPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbxPassword.Location = new System.Drawing.Point(113, 88);
             this.tbxPassword.Name = "tbxPassword";
+            this.tbxPassword.PasswordChar = '*';
             this.tbxPassword.Size = new System.Drawing.Size(100, 21);
             this.tbxPassword.TabIndex = 9;
             // 
@@ -148,6 +149,7 @@
             this.tbxConfPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbxConfPassword.Location = new System.Drawing.Point(113, 123);
             this.tbxConfPassword.Name = "tbxConfPassword";
+            this.tbxConfPassword.PasswordChar = '*';
             this.tbxConfPassword.Size = new System.Drawing.Size(100, 21);
             this.tbxConfPassword.TabIndex = 10;
             // 
@@ -212,7 +214,7 @@
             this.lblId.TabIndex = 16;
             this.lblId.Visible = false;
             // 
-            // UserDetailForm
+            // UserDetailsForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -234,7 +236,7 @@
             this.Controls.Add(this.lblPassword);
             this.Controls.Add(this.lblEmail);
             this.Controls.Add(this.lblName);
-            this.Name = "UserDetailForm";
+            this.Name = "UserDetailsForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Usuario";
             ((System.ComponentModel.ISupportInitialize)(this.pbxSave)).EndInit();

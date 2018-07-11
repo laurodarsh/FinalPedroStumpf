@@ -221,7 +221,8 @@ namespace ProjetoFinal
 
                     cmd.ExecuteNonQuery();
 
-                    MessageBox.Show("produto inativo!");
+                    MessageBox.Show("Produto inativo!");
+                    Log.SalvarLog("Produto Excluído", "Exclusão", DateTime.Now);
                 }
                 catch (Exception Ex)
                 {
@@ -256,6 +257,7 @@ namespace ProjetoFinal
                     cmd.ExecuteNonQuery();
 
                     MessageBox.Show("Adicionado com sucesso!");
+                    Log.SalvarLog("Produto Adicionado", "Adição", DateTime.Now);
                     CleanData();
 
                 }
@@ -284,12 +286,13 @@ namespace ProjetoFinal
                     cmd.Parameters.Add(new SqlParameter("@name", this.tbxName.Text));
                     cmd.Parameters.Add(new SqlParameter("@active", this.cbxActive.Checked));
                     cmd.Parameters.Add(new SqlParameter("@price", this.tbxPrice.Text));
-
-                    cmd.Parameters.Add(new SqlParameter("@fk_product", ((Category)cmbCategory.SelectedItem).Id));
+                    cmd.Parameters.Add(new SqlParameter("@id", this.lblId.Text));
+                    cmd.Parameters.Add(new SqlParameter("@fk_product", cmbCategory.SelectedIndex));
 
                     cmd.ExecuteNonQuery();
 
                     MessageBox.Show("Alterações salvas com sucesso!");
+                    Log.SalvarLog("Produto Editado", "Edição", DateTime.Now);
                 }
                 catch (Exception Ex)
                 {
@@ -300,12 +303,22 @@ namespace ProjetoFinal
                 {
                     sqlConnect.Close();
 
-                    HomeForm homeForm = new HomeForm();
-                    homeForm.Show();
+                    ProductAllForm productAllForm = new ProductAllForm();
+                    productAllForm.Show();
                     this.Hide();
                 }
             }
 ;
+        }
+
+        private void pbxSave_MouseEnter(object sender, EventArgs e)
+        {
+            pbxSave.BackgroundImage = ProjetoFinal.Properties.Resources.SaveGrey;
+        }
+
+        private void pbxSave_MouseLeave(object sender, EventArgs e)
+        {
+            pbxSave.BackgroundImage = ProjetoFinal.Properties.Resources.Save;
         }
     }
 }
