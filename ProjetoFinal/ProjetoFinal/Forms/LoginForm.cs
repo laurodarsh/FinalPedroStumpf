@@ -13,7 +13,7 @@ namespace ProjetoFinal
 {
     public partial class LoginForm : Form
     {
-
+        User aux = new User();
         string login;
         string password;
         public LoginForm()
@@ -27,11 +27,14 @@ namespace ProjetoFinal
 
             if (CheckLogin(password, login))
             {
-                HomeForm homeForm = new HomeForm();
-                homeForm.Show();
-                this.Hide();
+               
+                    HomeForm homeForm = new HomeForm(aux);
+                    homeForm.Show();
+                    this.Hide();
+               
             }
             else
+
             {
                 CleanData();
                 MessageBox.Show("usuário ou senha incorretos!");
@@ -57,6 +60,7 @@ namespace ProjetoFinal
             {
                 if (UserHelper.Hash(password) == user.Password)
                 {
+                    aux = user;
                     return true;
                 }
             }

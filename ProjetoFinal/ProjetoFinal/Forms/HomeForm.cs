@@ -1,4 +1,5 @@
-﻿using ProjetoFinal.Forms;
+﻿using ProjetoFinal.Classes;
+using ProjetoFinal.Forms;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -13,11 +14,32 @@ namespace ProjetoFinal
 {
     public partial class HomeForm : Form
     {
+        User aux = new User();
+
+        public HomeForm(User user)
+        {
+            InitializeComponent();
+            if (user.UserProfile.Name != "Gerente")
+            {
+                pbxLog.Visible = false;
+                pbxUser.Visible = false;
+                pbxUserProfile.Visible = false;
+            }
+            aux = user;
+        }
 
         public HomeForm()
         {
             InitializeComponent();
+            if (aux.UserProfile.Name != "Gerente")
+            {
+                pbxLog.Visible = false;
+                pbxUser.Visible = false;
+                pbxUserProfile.Visible = false;
+            }
+
         }
+
 
         private void pbxProduct_MouseEnter(object sender, EventArgs e)
         {
@@ -35,7 +57,7 @@ namespace ProjetoFinal
             productallForm.Show();
             this.Hide();
         }
- 
+
         private void pbxUser_MouseEnter(object sender, EventArgs e)
         {
             pbxUser.BackgroundImage = ProjetoFinal.Properties.Resources.User_Profile___Copy;
