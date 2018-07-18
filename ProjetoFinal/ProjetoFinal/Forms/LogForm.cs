@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ProjetoFinal.Classes;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -76,8 +77,6 @@ namespace ProjetoFinal
         }
         private void pbxBack_Click(object sender, EventArgs e)
         {
-            HomeForm homeForm = new HomeForm();
-            homeForm.Show();
             this.Hide();
         }
 
@@ -90,6 +89,15 @@ namespace ProjetoFinal
             pbxSearch.BackgroundImage = ProjetoFinal.Properties.Resources.search;
         }
 
-        
+        private void pbxSearch_Click(object sender, EventArgs e)
+        {
+            string optionForm = "LogForm";
+            string optionString = "name";
+
+            Search search = new Search();
+            dgvLog.DataSource = search.SearchFilter(connectionString, tbxSearch.Text, optionString, optionForm);
+
+            tbxSearch.Text = "";
+        }
     }
 }

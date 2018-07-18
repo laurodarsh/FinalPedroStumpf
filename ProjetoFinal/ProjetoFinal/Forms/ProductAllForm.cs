@@ -14,6 +14,7 @@ namespace ProjetoFinal.Forms
 {
     public partial class ProductAllForm : Form
     {
+
         public ProductAllForm()
         {
             InitializeComponent();
@@ -83,8 +84,6 @@ namespace ProjetoFinal.Forms
         }
         private void pbxBack_Click(object sender, EventArgs e)
         {
-            HomeForm homeForm = new HomeForm();
-            homeForm.Show();
             this.Hide();
         }
 
@@ -168,6 +167,17 @@ namespace ProjetoFinal.Forms
         private void pbxSearch_MouseLeave(object sender, EventArgs e)
         {
             pbxSearch.BackgroundImage = ProjetoFinal.Properties.Resources.search;
+        }
+
+        private void pbxSearch_Click(object sender, EventArgs e)
+        {
+            string optionForm = "ProductForm";
+            string optionString = "name";
+
+            Search search = new Search();
+            dgvProduct.DataSource = search.SearchFilter(connectionString, tbxSearch.Text, optionString, optionForm);
+
+            tbxSearch.Text = "";
         }
     }
 }

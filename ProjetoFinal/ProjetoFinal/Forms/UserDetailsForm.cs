@@ -38,11 +38,11 @@ namespace ProjetoFinal
                 {
                     while (reader.Read())
                     {
-                        cmbProfile.Items.Add(reader["NAME"].ToString());
+                        UserProfile u = new UserProfile(Int32.Parse(reader["ID"].ToString()), reader["NAME"].ToString(), bool.Parse(reader["ACTIVE"].ToString()));
+                        cmbProfile.Items.Add(u);
                     }
                 }
-
-                cmbProfile.SelectedItem = cmbProfile.Items[indexCombo];
+                
             }
             catch (Exception ex)
             {
@@ -59,7 +59,7 @@ namespace ProjetoFinal
         {
 
             InitializeComponent();
-
+            cmbProfile.DisplayMember = "NAME";
             lblId.Text = idUser.ToString(); //-------
 
             SqlConnection sqlConnect = new SqlConnection(connectionString);

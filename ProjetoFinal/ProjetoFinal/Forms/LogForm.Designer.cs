@@ -93,6 +93,7 @@
             this.pbxSearch.Size = new System.Drawing.Size(35, 30);
             this.pbxSearch.TabIndex = 2;
             this.pbxSearch.TabStop = false;
+            this.pbxSearch.Click += new System.EventHandler(this.pbxSearch_Click);
             this.pbxSearch.MouseEnter += new System.EventHandler(this.pbxSearch_MouseEnter);
             this.pbxSearch.MouseLeave += new System.EventHandler(this.pbxSearch_MouseLeave);
             // 

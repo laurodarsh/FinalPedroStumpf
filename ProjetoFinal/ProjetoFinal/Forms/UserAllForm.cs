@@ -85,8 +85,6 @@ namespace ProjetoFinal.Forms
         }
         private void pbxBack_Click(object sender, EventArgs e)
         {
-            HomeForm homeForm = new HomeForm();
-            homeForm.Show();
             this.Hide();
         }
 
@@ -171,6 +169,17 @@ namespace ProjetoFinal.Forms
             {
                 sqlConnect.Close();
             }
+        }
+
+        private void pbxSearch_Click(object sender, EventArgs e)
+        {
+            string optionForm = "UserForm";
+            string optionString = "name";
+
+            Search search = new Search();
+            dgvUser.DataSource = search.SearchFilter(connectionString, tbxSearch.Text, optionString, optionForm);
+
+            tbxSearch.Text = "";
         }
     }
 }

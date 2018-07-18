@@ -19,7 +19,7 @@ namespace ProjetoFinal
         public HomeForm(User user)
         {
             InitializeComponent();
-            if (user.UserProfile.Name != "Gerente")
+            if (user.UserProfile.Id != 1)
             {
                 pbxLog.Visible = false;
                 pbxUser.Visible = false;
@@ -55,7 +55,6 @@ namespace ProjetoFinal
         {
             ProductAllForm productallForm = new ProductAllForm();
             productallForm.Show();
-            this.Hide();
         }
 
         private void pbxUser_MouseEnter(object sender, EventArgs e)
@@ -72,7 +71,7 @@ namespace ProjetoFinal
         {
             UserAllForm userallForm = new UserAllForm();
             userallForm.Show();
-            this.Hide();
+            
         }
 
         private void pbxUserProfile_MouseEnter(object sender, EventArgs e)
@@ -89,7 +88,7 @@ namespace ProjetoFinal
         {
             UserProfileAllForm userprofileallForm = new UserProfileAllForm();
             userprofileallForm.Show();
-            this.Hide();
+            
         }
 
         private void pbxCategory_MouseEnter(object sender, EventArgs e)
@@ -106,7 +105,7 @@ namespace ProjetoFinal
         {
             CategoryAllForm categoryallForm = new CategoryAllForm();
             categoryallForm.Show();
-            this.Hide();
+            
         }
 
         private void pbxLog_MouseEnter(object sender, EventArgs e)
@@ -123,7 +122,7 @@ namespace ProjetoFinal
         {
             LogForm logForm = new LogForm();
             logForm.Show();
-            this.Hide();
+            
         }
     }
 }

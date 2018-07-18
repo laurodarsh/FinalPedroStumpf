@@ -39,11 +39,12 @@ namespace ProjetoFinal
                 {
                     while (reader.Read())
                     {
-                        cmbCategory.Items.Add(reader["NAME"].ToString());
+                        Category c = new Category(Int32.Parse(reader["ID"].ToString()), reader["NAME"].ToString(), bool.Parse(reader["ACTIVE"].ToString()));
+                        cmbCategory.Items.Add(c);
+                    
                     }
                 }
 
-                cmbCategory.SelectedItem = cmbCategory.Items[indexCombo];
             }
             catch (Exception ex)
             {
@@ -61,7 +62,7 @@ namespace ProjetoFinal
         {
 
             InitializeComponent();
-
+            cmbCategory.DisplayMember = "NAME";
             lblId.Text = idProduct.ToString(); //-------
 
             SqlConnection sqlConnect = new SqlConnection(connectionString);
@@ -73,9 +74,8 @@ namespace ProjetoFinal
                     //Conectar
                     sqlConnect.Open();
 
-                    SqlCommand cmd = new SqlCommand("SELECT * FROM PRODUCT WHERE ID = @id", sqlConnect);
-                    //SqlCommand cmd = new SqlCommand("SELECT * FROM CATEGORY WHERE ID = " + idCategory.ToString(), sqlConnect);
-
+                    SqlCommand cmd = new SqlCommand("SELECT PRODUCT.ID, PRODUCT.NAME, PRODUCT.ACTIVE, PRODUCT.PRICE, CATEGORY.NAME FROM PRODUCT INNER JOIN CATEGORY ON PRODUCT.FK_PRODUCT = CATEGORY.ID WHERE PRODUCT.ID = @id;", sqlConnect);
+                   
                     cmd.Parameters.Add(new SqlParameter("@id", idProduct));
 
                     Product product = new Product(); //------
@@ -93,6 +93,7 @@ namespace ProjetoFinal
                             {
                                 indexCombo = product.Category.Id;
                             }
+
                             InitializeComboBox(cmbCategory, indexCombo);
                         }
                     }
@@ -287,7 +288,7 @@ namespace ProjetoFinal
                     cmd.Parameters.Add(new SqlParameter("@active", this.cbxActive.Checked));
                     cmd.Parameters.Add(new SqlParameter("@price", this.tbxPrice.Text));
                     cmd.Parameters.Add(new SqlParameter("@id", this.lblId.Text));
-                    cmd.Parameters.Add(new SqlParameter("@fk_product", cmbCategory.SelectedIndex));
+                    cmd.Parameters.Add(new SqlParameter("@fk_product", ((Category)(cmbCategory.SelectedItem)).Id));
 
                     cmd.ExecuteNonQuery();
 
