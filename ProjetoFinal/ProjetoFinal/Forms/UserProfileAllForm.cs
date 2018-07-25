@@ -58,6 +58,7 @@ namespace ProjetoFinal.Forms
             dgvUserProfile.Columns["ID"].Visible = false;
             dgvUserProfile.Columns["NAME"].HeaderText = "Nome";
             dgvUserProfile.Columns["ACTIVE"].HeaderText = "Ativo";
+            dgvUserProfile.Columns["NAME"].Width = 260;
 
             foreach (DataGridViewColumn col in dgvUserProfile.Columns)
             {
@@ -164,7 +165,7 @@ namespace ProjetoFinal.Forms
 
         private void pbxSearch_Click(object sender, EventArgs e)
         {
-            string optionForm = "CategoryForm";
+            string optionForm = "UserProfileForm";
             string optionString = "name";
 
             Search search = new Search();

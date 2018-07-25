@@ -66,7 +66,7 @@ namespace ProjetoFinal.Forms
             dgvUser.Columns["ACTIVE"].HeaderText = "Ativo";
             dgvUser.Columns["ACTIVE"].DisplayIndex = 5;
             dgvUser.Columns["NAME1"].DisplayIndex = 4;
-
+            dgvUser.Columns["ACTIVE"].Width = 62;
             foreach (DataGridViewColumn col in dgvUser.Columns)
             {
                 col.HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter;

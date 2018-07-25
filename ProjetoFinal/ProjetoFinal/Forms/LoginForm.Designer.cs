@@ -32,7 +32,6 @@
             this.tbxName = new System.Windows.Forms.TextBox();
             this.tbxPassword = new System.Windows.Forms.TextBox();
             this.btnEnter = new System.Windows.Forms.Button();
-            this.btnPasswordForgot = new System.Windows.Forms.Button();
             this.lblPassword = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
@@ -67,24 +66,13 @@
             // 
             this.btnEnter.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnEnter.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEnter.Location = new System.Drawing.Point(32, 154);
+            this.btnEnter.Location = new System.Drawing.Point(102, 158);
             this.btnEnter.Name = "btnEnter";
             this.btnEnter.Size = new System.Drawing.Size(82, 44);
             this.btnEnter.TabIndex = 3;
             this.btnEnter.Text = "Entrar";
             this.btnEnter.UseVisualStyleBackColor = true;
             this.btnEnter.Click += new System.EventHandler(this.btnEnter_Click);
-            // 
-            // btnPasswordForgot
-            // 
-            this.btnPasswordForgot.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnPasswordForgot.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPasswordForgot.Location = new System.Drawing.Point(165, 154);
-            this.btnPasswordForgot.Name = "btnPasswordForgot";
-            this.btnPasswordForgot.Size = new System.Drawing.Size(82, 44);
-            this.btnPasswordForgot.TabIndex = 4;
-            this.btnPasswordForgot.Text = "Esqueceu a senha";
-            this.btnPasswordForgot.UseVisualStyleBackColor = true;
             // 
             // lblPassword
             // 
@@ -103,7 +91,6 @@
             this.BackColor = System.Drawing.Color.LightGray;
             this.ClientSize = new System.Drawing.Size(284, 261);
             this.Controls.Add(this.lblPassword);
-            this.Controls.Add(this.btnPasswordForgot);
             this.Controls.Add(this.btnEnter);
             this.Controls.Add(this.tbxPassword);
             this.Controls.Add(this.tbxName);
@@ -122,7 +109,6 @@
         private System.Windows.Forms.TextBox tbxName;
         private System.Windows.Forms.TextBox tbxPassword;
         private System.Windows.Forms.Button btnEnter;
-        private System.Windows.Forms.Button btnPasswordForgot;
         private System.Windows.Forms.Label lblPassword;
     }
 }

@@ -59,7 +59,7 @@ namespace ProjetoFinal
             dgvLog.Columns["DESCRIPTION"].HeaderText = "Descrição";
             dgvLog.Columns["TYPE"].HeaderText = "Tipo";
             dgvLog.Columns["DATE"].HeaderText = "Data";
-
+            dgvLog.Columns["DESCRIPTION"].Width = 145;
             foreach (DataGridViewColumn col in dgvLog.Columns)
             {
                 col.HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter;
@@ -92,7 +92,7 @@ namespace ProjetoFinal
         private void pbxSearch_Click(object sender, EventArgs e)
         {
             string optionForm = "LogForm";
-            string optionString = "name";
+            string optionString = "description";
 
             Search search = new Search();
             dgvLog.DataSource = search.SearchFilter(connectionString, tbxSearch.Text, optionString, optionForm);

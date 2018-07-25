@@ -66,7 +66,11 @@ namespace ProjetoFinal.Forms
             dgvProduct.Columns["NAME1"].HeaderText = "Categoria";
             dgvProduct.Columns["ACTIVE"].DisplayIndex = 4;
             dgvProduct.Columns["NAME1"].DisplayIndex = 3;
-
+            dgvProduct.Columns["ACTIVE"].Width = 62;
+            dgvProduct.Columns["PRICE"].Width = 62;
+            dgvProduct.Columns["PRICE"].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            dgvProduct.Columns["NAME"].Width = 118;
+            dgvProduct.Columns["NAME1"].Width = 118;
             foreach (DataGridViewColumn col in dgvProduct.Columns)
             {
                 col.HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter;

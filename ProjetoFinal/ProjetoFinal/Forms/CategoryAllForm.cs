@@ -58,7 +58,7 @@ namespace ProjetoFinal.Forms
             dgvCategory.Columns["ID"].Visible = false;
             dgvCategory.Columns["NAME"].HeaderText = "Nome";
             dgvCategory.Columns["ACTIVE"].HeaderText = "Ativo";
-
+            dgvCategory.Columns["NAME"].Width = 175;
             foreach (DataGridViewColumn col in dgvCategory.Columns)
             {
                 col.HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter;
